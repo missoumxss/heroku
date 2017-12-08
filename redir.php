@@ -1,1 +1,1 @@
-<?php header('location: https://np.lexity.com/f57ea75d/h/1/v/q/k/aaa/u/xxxx/r/fff/vn/1/c/<script>alert(0);<%2fscript>//') ?> 
+<?php header('location: http://httpbin.org/response-headers?Content-Type=text%2Fplain%3B+charset%3DUTF-8&Server=%3Cscript%3Ealert(0)%3C/script%3E/') ?> 
