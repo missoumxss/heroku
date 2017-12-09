@@ -6,6 +6,8 @@ $data = urlencode($data);
 
 header("POST $path HTTP/1.1\\r\
 " );
+header("location: https://explorer.earthengine.google.com\\r\
+");
 header("Host: $host\\r\
 " );
 header("Content-type: application/x-www-form-urlencoded\\r\
