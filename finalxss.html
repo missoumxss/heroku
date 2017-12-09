@@ -1,6 +1,6 @@
 <html>
 <head>
-	<script>alert(document.documentMode)</script> 
+<script>function subm(){document.getElementById('xss').submit()};subm();alert(document.documentMode)</script> 
 </head>
 <body onload="document.getElementById('xss').submit()">
 
