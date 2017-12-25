@@ -1,4 +1,4 @@
 
 <svg xmlns="http://www.w3.org/2000/svg">
-    <script>window.top.eval("alert(document.domain)")</script>
+    <script>alert(document.domain)</script>
 </svg>
