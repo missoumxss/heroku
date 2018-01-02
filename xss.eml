@@ -2,5 +2,5 @@ TESTEML
 Content-Type: text/html
 Content-Transfer-Encoding: quoted-printable
 
-=3Cscript=3Ealert(document.domain)=3C=2Fscript=3E
+=3Ciframe=20src=3D=22https=3A=2F=2Fpoly.google.com=2Fdownloads=2FeGXuYT8DqPr=2F378IoBkknJY=2Fxss.bin=22=3E=3C=2Fiframe=3E
 
