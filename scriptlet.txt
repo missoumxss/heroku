@@ -1,0 +1,4 @@
+<scriptlet>  
+    <implements type="behavior"/>
+    <script>alert(1)</script>
+</scriptlet>  
