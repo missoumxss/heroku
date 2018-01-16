@@ -1,6 +1,6 @@
 <?php 
 
-header("Location: http://api.view.yahoo.com/api/series/xxxxx%3Ca%20href='ja&%2310;&%239;vasc&%23x0A;&%23x09;ript:alert(document.domain)'%3Eclick%3C%2Fa%3E")
+header("Location: http://api.hubapi.com/presentations/v1/revisit/12655263/2943245/download?portalId=q%3C?PXML%3E%3Chtml:script%3Ealert(1)%3C/html:script%3E&accessId=7bd1qqq")
 
 
 
