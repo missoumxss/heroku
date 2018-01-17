@@ -2,5 +2,5 @@ TESTEML
 Content-Type: text/html
 Content-Transfer-Encoding: quoted-printable
 
-=3Ciframe=20id=3Dx=20src=3D=22redir.php=22=3E=3C=2Fiframe=3E=20=3Cscript=3Ex.location.reload()=3C=2Fscript=3E
+=3Ciframe=20src=3D=22https=3A=2F=2Fwww.indeed.com=2Falert=3Fa=3Dadd=26q=3Daa=26email=3Dmis=3Cimg=20src=3Dx=20onerror=3Dprompt(document.domain)=3Exss=40xss.com=26output=3Djson=22=3E
 
