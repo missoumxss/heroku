@@ -28,3 +28,16 @@ if you ever hunted in business.google.com then you have seen that they got an op
  <img src=>
  anyway, this XSS wasnt rewarded. but leaking the nest access token was, sometimes having google products/devices gives you advantges.
  <iframe width="560" height="315" src="https://www.youtube.com/embed/L8ySb-dPBW8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+ 4) google Local Guides Stored XSS via AngularJS Injection.
+ if you used to share reviews, photos, about the places in google maps then you are familiar with this google Local Guides, at some certain level, google will offer you to create a meetup, creating the meetup with  angularjs exprestion in name of the meetup  was stored and exectued  back. 
+
+ 
+5) google maps reflected XSS 
+ this one was also related to  google Local Guides but diffrent root, as every hunter, I have multiple google accounts, at one point, I was visitng a url from account with creating meetup with account witought privilege And then something interesting show up on screen. a url with paramter and value, i didnt use to see, espcially when you are familiar with google vrp.
+ the value was reflected back nacked , i mean without sanitizing special characters. 
+I forgot to take any screenshots or record the POC, and deleted the report email. beside my account in google local guide has blocked by a google staff.
+ 
+ 6
+
+ 
