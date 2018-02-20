@@ -14,15 +14,15 @@
 i was rediscovering the app,I usually do that with google VRP, they push updates and new designs from time to time, and I had just noticed this url https://www.google.com/adsense/new/u/pub-444/home?host-callback-url=domain.com
  loading,  nobody would have missed it, 100 percent of hunters would try their bullet in host-callback-url paramter, so did I, and got the XSS fired .
 full XSS url was as follow :  https://www.google.com/adsense/new/u/pub-444/home?host-callback-url=javascript:alert(0)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PH3J2DXDYZM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </br><iframe width="560" height="315" src="https://www.youtube.com/embed/PH3J2DXDYZM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 </font></p>
 
 <p>
   <font size="8" color="black">
-   2) business.google.com Stored XSS </br></font>
+   2) business.google.com Stored XSS: </br></font>
  <font size="5" color="black">
-if you ever hunted in business.google.com then you have seen that they got an option for editing the website of your business location, what you'll be sure of website editing is always ability to inject the at least <a> <img> tags, and once again, from the editing area click the link button then add you bullet 'javascript:alert(1)', somewhow clicking normally on the the generated button was not firing the XSS, CTRL or Shift + click was needed to fire the XSS.  
+if you ever hunted in business.google.com then you have seen that they got an option for editing the website of your business location, what you'll be sure of website editing is always ability to inject the at least <a> <img> tags, and once again, from the editing area click the link button then add you bullet 'javascript:alert(1)', somewhow clicking normally on the the generated button was not firing the XSS, CTRL or Shift + click was needed to fire the XSS.</br>  
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gDOYPFV8nyM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
  </font></p>
  
@@ -32,7 +32,8 @@ if you ever hunted in business.google.com then you have seen that they got an op
  <font size="5" color="black">
  one day i was checking my phone (android device),seen that they wanted to push an update which was the google assistant with her lovely voice lol, after the the assistant installed I ran burpsuite up and start looking around the app and i was lucky that there were too much things to play with.
  in google assistant you can control your smart home devices by linking third parties (the ones that control your smart home's devices) thourgh requesting code/token from them. what cought my attention in there is "nest" app, as its owned by google and other are just third parties and wont be rewarded, 
-<img src=https://i.imgur.com/MrkDuhF.png><img src=https://i.imgur.com/yqICIL4.png><img src=https://i.imgur.com/mCuSIkS.png><img src=https://i.imgur.com/IDSizdp.png>
+<div > <img src=https://i.imgur.com/MrkDuhF.png height="45" width="45"><img src=https://i.imgur.com/yqICIL4.png height="45" width="45" ><img src=https://i.imgur.com/mCuSIkS.png height="45" width="45" ><img src=https://i.imgur.com/IDSizdp.png height="45" width="45">
+  </div>
  the attack flow was follow: 
  I: providing the victim the with assistant.google.com/services/adapters/nest/activate?activateuid=54zae465az-54aze54a&redirect_url=evil.Coml which has an evil redirecting, 
  II: google authorizationapp was not checking the redirecting hence the victim's access token was leaking in referrer.
