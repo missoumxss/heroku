@@ -116,15 +116,15 @@ when it comes to data, the appalication should be having something like uploadin
   telling the perfect conditions to get an xss on IE 11 by forcing the content-type to be text/html . 
  <mark>@cure53berlin 's resaerch</mark> shows a trick how to do that. their research is a treasure i highly recommend reading
 it carefully.</br>
-this was a self-stored XSS till i discovered that the adding the data was lacking the CSRF protection,combining all these issues:</br>
+this was a self-stored XSS till i discovered that the adding the data was lacking the CSRF protection,combining thse minor issues:</br>
 <ul>
-  <li>application/json response </li>
+  <li>force application/json response to be text/html</li>
   <li>attacker has control over input within it ( < > is not sanitized )</li>
   <li>vulnerable to clickjacking. </li>
   <li>csrf to store the XSS in victim account. </li>
 </ul> 
 
-  i could XSS the victim account, sometimes bugs are looking for ya .
+i could XSS the victim account, sometimes bugs are looking for ya .</br> 
  <iframe width="560" height="315" src="https://www.youtube.com/embed/Qy_Ndkd86rg" frameborder="0" allow="autoplay; encrypted-media"
          allowfullscreen></iframe>
 </font></p>
@@ -132,10 +132,10 @@ this was a self-stored XSS till i discovered that the adding the data was lackin
 <p>
 <font size="5" color="black">
 these bugs were all i could collect, still there two or three high-bounty bugs but i couldnt find them, i hope you didnt get bored 
- reading it. i highlighted some of advices that helps you with google vrp, i would like to thank google security team,especially
-  @sirdarckcat this guy is a strong bridge between hunters and google vrp, just leave a comment if you feel to at 
+ reading it. i highlighted some advices that helps you with google vrp, i would like to thank google security team,especially
+ <a href=https://twitter.com/sirdarckcat>@sirdarckcat</a> this guy is a strong bridge between hunters and google vrp, just leave us a comment if you feel to at 
  <a href=https://twitter.com/missoum1307> @missoum1307 
- </a> peace upon you.
+ </a></br> peace upon you.
  </font>
 </p>
 
