@@ -119,7 +119,7 @@ when it comes to data, the appalication should be having something like uploadin
  uploading the data, showed that the table name stored and without sanitazing but wait, the response was appliaction/json ,
   checking the http headers also showed there was neither x-frame-options	nor x-content-type-options, as some of you learn that i am 
   telling the perfect conditions to get an xss on IE 11 by forcing the content-type to be text/html . 
-<mark><a href=https://twitter.com/cure53berlin>@cure53berlin's</a>resaerch</mark> shows a trick how to do that. their research is a treasure i highly recommend reading
+<mark><a href=https://twitter.com/cure53berlin>@cure53berlin's </a>resaerch</mark> shows a trick how to do that. their research is a treasure i highly recommend reading
 it carefully.</br>
 this was a self-stored XSS till i discovered that the adding the data was lacking the CSRF protection,combining thse minor issues:</br>
 <ul>
