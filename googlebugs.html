@@ -16,7 +16,7 @@ full XSS url was as follow :  https://www.google.com/adsense/new/u/pub-444/home?
 if you ever hunted in business.google.com then you have seen that they got an option for editing the website of your business location, what you'll be sure of website editing is always ability to inject the at least <a> <img> tags, and once again, from the editing area click the link button then add you bullet 'javascript:alert(1)', somewhow clicking normally on the the generated button was not firing the XSS, CTRL or Shift + click was needed to fire the XSS.  
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gDOYPFV8nyM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
  
-3)changing your home temperature  through leaking your nest access token in referrer.
+ 3)changing your home temperature  through leaking your nest access token in referrer.
  one day i was checking my phone (android device),seen that they wanted to push an update which was the google assistant with her lovely voice lol, after the the assistant installed I ran burpsuite up and start looking around the app and i was lucky that there were too much things to play with.
  in google assistant you can control your smart home devices by linking third parties (the ones that control your smart home's devices) thourgh requesting code/token from them. what cought my attention in there is "nest" app, as its owned by google and other are just third parties and wont be rewarded, 
 <img src=https://i.imgur.com/MrkDuhF.png><img src=https://i.imgur.com/yqICIL4.png><img src=https://i.imgur.com/mCuSIkS.png><img src=https://i.imgur.com/IDSizdp.png>
@@ -25,19 +25,31 @@ if you ever hunted in business.google.com then you have seen that they got an op
  II: google authorizationapp was not checking the redirecting hence the victim's access token was leaking in referrer.
  the redireting was coming back through <code><meta http-equiv="refresh" content="0;URL='evil.com'" />    </code>
  you'd have been able to XSS the matter before few years ago, as most browsers now refusing to refresh to a javascript: URL.
- <img src=>
+ <img src=https://i.imgur.com/urzAIDu.png>
  anyway, this XSS wasnt rewarded. but leaking the nest access token was, sometimes having google products/devices gives you advantges.
  <iframe width="560" height="315" src="https://www.youtube.com/embed/L8ySb-dPBW8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
- 4) google Local Guides Stored XSS via AngularJS Injection.
+4) google Local Guides Stored XSS via AngularJS Injection.
  if you used to share reviews, photos, about the places in google maps then you are familiar with this google Local Guides, at some certain level, google will offer you to create a meetup, creating the meetup with  angularjs exprestion in name of the meetup  was stored and exectued  back. 
-
+  contribute whenever you can with google.
  
 5) google maps reflected XSS 
  this one was also related to  google Local Guides but diffrent root, as every hunter, I have multiple google accounts, at one point, I was visitng a url from account with creating meetup with account witought privilege And then something interesting show up on screen. a url with paramter and value, i didnt use to see, espcially when you are familiar with google vrp.
  the value was reflected back nacked , i mean without sanitizing special characters. 
 I forgot to take any screenshots or record the POC, and deleted the report email. beside my account in google local guide has blocked by a google staff.
+lesson learn here is, always check apps,links,features with low preveillge espcilally with program, you got no idea what'll show up. 
  
- 6
+6) explorer.earthengine.google.com reflected XSS 
+this XSS's found after reading <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Combination of techniques lead to <a href="https://twitter.com/hashtag/DOM?src=hash&amp;ref_src=twsrc%5Etfw">#DOM</a> Based <a href="https://twitter.com/hashtag/XSS?src=hash&amp;ref_src=twsrc%5Etfw">#XSS</a> in <a href="https://twitter.com/hashtag/Google?src=hash&amp;ref_src=twsrc%5Etfw">#Google</a>.<a href="https://t.co/tqt3nbRNJX">https://t.co/tqt3nbRNJX</a><a href="https://twitter.com/hashtag/VRP?src=hash&amp;ref_src=twsrc%5Etfw">#VRP</a> <a href="https://twitter.com/hashtag/XSS?src=hash&amp;ref_src=twsrc%5Etfw">#XSS</a> <a href="https://twitter.com/hashtag/Google?src=hash&amp;ref_src=twsrc%5Etfw">#Google</a> //cc:<a href="https://twitter.com/sirdarckcat?ref_src=twsrc%5Etfw">@sirdarckcat</a></p>&mdash; Sasi Levi 🎧 (@sasi2103) <a href="https://twitter.com/sasi2103/status/777793598268043264?ref_src=twsrc%5Etfw">September 19, 2016</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+ google earthengine is a planetary-scale platform for Earth science data & analysis, decided to take a look, felt it vulnerable and  my perspective was correct,
+when it comes to data, the appalication should be having something like uploading or downloading data, examining the appliaction revealed feature to add data layer from Fusion Table. 
+ i would mention here that this feature was available in some accounts and was not in some accounts, honestly till now i dont why!
+ uploading the data, showed that the table name stored and without sanitazing but wait, the response was appliaction/json , checking the http headers also showed there was neither x-frame-options	nor x-content-type-options, as some of learn that im telling the perfect conditions to get an xss on IE 11 by forcing the content-type to be text/html . 
+ @cure53berlin 's resaerch shows a trick how to do that. their research is a treasure i highly recommend reading it carefully.
+this was a self-stored XSS til i discovered that the adding the data was lacking the CSRF protection,combining all these issues i could XSS the victim account, sometimes bugs are looking for ya .
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/Qy_Ndkd86rg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+these bugs was all i could collect, there are two or three high-bounty bugs but i forgot about them, i hope you didnt get bored reading it as there is nothing special about them. i highlighted the some of adviced that help with google vrp, i would like to thank google security team, sometimes they are more generos  and pay you unexpected bugs, and @sirdarckcat this guy is a strong bridge betweeen hunters and google vrp. 
 
  
