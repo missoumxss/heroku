@@ -1,9 +1,14 @@
 <p style="font-size: 300%">Google bugs stories  and the shiny pixelbook.</p>
 
 <font size="5" color="black">
-<p>Peace upon you hunters, hope y'all doing good, My gift from google security team has landed today, Here I am sharing the bugs that got it for me, along the past year (2017) which also ranked me at 7 onto google HOF, anyway, there is nothing special about them, but folks wanted to see them.
+<p>Peace upon you hunters, hope y'all doing good, My gift from google security team has landed today, 
+ Here I am sharing the bugs that got it for me, along the past year (2017) which also ranked me at 7
+ onto google HOF, anyway, there is nothing special about them, but folks wanted to see them.
 </font>
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">appreciation have always had its own Words. Thanks guys <a href="https://twitter.com/sirdarckcat?ref_src=twsrc%5Etfw">@sirdarckcat</a> <a href="https://t.co/jm2aUTMMvQ">pic.twitter.com/jm2aUTMMvQ</a></p>&mdash; Missoum Said (@missoum1307) <a href="https://twitter.com/missoum1307/status/965675733694722048?ref_src=twsrc%5Etfw">February 19, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">appreciation have always 
+ had its own Words. Thanks guys <a href="https://twitter.com/sirdarckcat?ref_src=twsrc%5Etfw">@sirdarckcat</a> 
+ <a href="https://t.co/jm2aUTMMvQ">pic.twitter.com/jm2aUTMMvQ</a></p>&mdash; Missoum Said (@missoum1307)
+ <a href="https://twitter.com/missoum1307/status/965675733694722048?ref_src=twsrc%5Etfw">February 19, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></font></p>
  
 
@@ -11,10 +16,15 @@
  <font size="8" color="black"> 
   1) google.com/adsense/ DOM XSS: </br></font>
  <font size="5" color="black">
-i was rediscovering the app,I usually do that with google VRP, <mark>they push updates and new designs from time to time</mark>, and I had just noticed this url https://www.google.com/adsense/new/u/pub-444/home?host-callback-url=domain.com
- loading,  nobody would have missed it, 100 percent of hunters would try their bullet in host-callback-url paramter, so did I, and got the XSS fired .
+i was rediscovering the app,I usually do that with google VRP, <mark>they push updates and new 
+  designs from time to time</mark>, and I had just noticed this url 
+  <a href=https://www.google.com/adsense/new/u/pub-444/home?host-callback-url=domain.com>
+   https://www.google.com/adsense/new/u/pub-444/home?host-callback-url=domain.com</a>
+ loading,  nobody would have missed it, 100 percent of hunters would try their bullet 
+  in host-callback-url paramter, so did I, and got the XSS fired .</br>
 full XSS url was as follow :  https://www.google.com/adsense/new/u/pub-444/home?host-callback-url=javascript:alert(0)
-  </br><iframe width="560" height="315" src="https://www.youtube.com/embed/PH3J2DXDYZM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </br><iframe width="560" height="315" src="https://www.youtube.com/embed/PH3J2DXDYZM" frameborder="0" allow="autoplay; 
+   encrypted-media" allowfullscreen></iframe>
 
 </font></p>
 
@@ -22,33 +32,47 @@ full XSS url was as follow :  https://www.google.com/adsense/new/u/pub-444/home?
   <font size="8" color="black">
    2) business.google.com Stored XSS: </br></font>
  <font size="5" color="black">
-if you ever hunted in business.google.com then you have seen that they got an option for editing the website of your business location, what you'll be sure of website editing is always ability to inject the at least <a> <img> tags, and once again, from the editing area click the link button then add your bullet 'javascript:alert(1)', somewhow clicking normally on the the generated button was not firing the XSS, <mark>CTRL or Shift + click was needed to fire the XSS.</mark></br>  
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gDOYPFV8nyM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+if you ever hunted in business.google.com then you have seen that they got an option
+  for editing the website of your business location, what you'll be sure of website editing is 
+  always ability to inject at least tags like <xmp> <a> <img> </xmp, and once again, from the editing area click the
+  link button then add your bullet 'javascript:alert(1)', somewhow clicking normally on the the generated 
+  button was not firing the XSS, <mark>CTRL or Shift + click was needed to fire the XSS.</mark></br>  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gDOYPFV8nyM" 
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
  </font></p>
  
  <p>
   <font size="8" color="black">
    3)changing your home temperature  through leaking your nest access token in referer:</br></font>
  <font size="5" color="black">
- one day i was checking my phone (android device),seen that they wanted to push an update which was the google assistant with her lovely voice lol, after the the assistant installed I ran burpsuite up and start looking around the app and i was lucky that there were too much things to play with.
- in google assistant you can control your smart home devices by linking third parties (the ones that control your smart home's devices) thourgh requesting code/token from them. what cought my attention in there is "nest" app, as its owned by google and other are just third parties and wont be rewarded, 
+ one day i was checking my phone (android device),seen that they wanted to push an update which was the google assistant 
+  with her lovely voice lol, after the the assistant installed I ran burpsuite up and start looking around the app and i was
+  lucky that there were too much things to play with.</br>
+ in google assistant you can control your smart home devices by linking third parties (the ones that control your smart
+  home's devices), what cought my attention in there is "nest" app, as its owned 
+  by google and other are just third parties and wont be rewarded, 
   the attack flow was as follow: </br>
- I: providing the victim the with assistant.google.com/services/adapters/nest/activate?activateuid=54zae465az-54aze54a&redirect_url=evil.Coml which has an evil redirecting, 
+ I: providing the victim  with assistant.google.com/services/adapters/nest/activate?activateuid=54zae465az-54aze54a&redirect_url=evil.Com
+which has an evil redirecting, 
 </br>
-II: google authorization app was not checking the redirecting hence the victim's access token was leaking in referrer.
+II: victim login to try to give the authirzation to google and click accept after log in to his nest account. </br>
+III: google authorization app was not checking the redirecting hence the victim's access token was leaking in referrer.
  the redireting was coming back through <xmp><meta http-equiv="refresh" content="0;URL='evil.com'" />   </xmp>
  you'd have been able to XSS the matter before few years ago, as most browsers now refusing to refresh to a javascript: URL.</br>
 <img src=https://i.imgur.com/urzAIDu.png height=200 width=200></br>
 
- anyway, this XSS wasnt rewarded. but leaking the nest access token was, sometimes having google products/devices gives you advantges.
- <iframe width="560" height="315" src="https://www.youtube.com/embed/L8ySb-dPBW8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+ anyway, this XSS wasnt rewarded. but leaking the nest access token was, <mark> sometimes having google products/devices gives you advantges.</mark>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/L8ySb-dPBW8" frameborder="0" allow="autoplay; encrypted-media" 
+         allowfullscreen></iframe>
 </font></p>
 
 <p>
  <font size="8" color="black">
   4) google Local Guides Stored XSS via AngularJS Injection:</br></font>
  <font size="5" color="black">
- if you used to share reviews, photos, about the places in google maps then you are familiar with this google Local Guides, at some certain level, google will offer you to create a meetup, creating the meetup with  angularjs exprestion in name of the meetup  was stored and exectued  back. 
+ if you used to share reviews, photos, about the places in google maps then you are familiar with google Local Guides product, at some
+  certain level, google will offer you to create a meetup, creating the meetup with  angularjs exprestion in name of the meetup
+  was stored and exectued  back. 
   <mark>contribute whenever you can with google.</mark>
  </font></p>
 
@@ -56,31 +80,63 @@ II: google authorization app was not checking the redirecting hence the victim's
  <font size="8" color="black">
   5) google maps reflected XSS:</br></font>
  <font size="5" color="black">
- this one was also related to  google Local Guides but diffrent root, as every hunter, I have multiple google accounts, at one point, I was visitng a url from account with creating meetup with account witought privilege And then something interesting show up on screen. a url with paramter and value, i didnt use to see, espcially when you are familiar with google vrp.
- the value was reflected back nacked , i mean without sanitizing special characters. 
-I forgot to take any screenshots or record the POC, and deleted the report email. beside my account in google local guide has blocked by a google staff.
-lesson learn here is,<mark> always check apps,links,features with low preveillge espcilally with program,</mark> you got no idea what'll show up. 
+ this one was also related to  google Local Guides but diffrent root, like every hunter, I have multiple google accounts, at one point,
+  I was trying to access a url from account with creating meetup privilege  with account without that privilege and then something interesting show up on 
+  screen. a url with paramter and value, i didnt use to see, espcially when you are familiar with google vrp.
+ the value was reflected back nacked , i mean without sanitizing special characters. so the vulnerable url was something like :
+  google.com/maps/apis/authen?par=XSS-goes-here.
+I forgot to take any screenshots or record the POC, and deleted the report email. beside my account in google local guide has 
+  blocked by a google staff.
+lesson learn here is,<mark> always check apps,links,features with low preveillge espcilally with program,</mark> you got no
+  idea what'll show up. 
 </font></p>
 <p>
  <font size="8" color="black"> 
   6) explorer.earthengine.google.com reflected XSS:</br></font>
  <font size="5" color="black">
-this XSS's found after reading <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Combination of techniques lead to <a href="https://twitter.com/hashtag/DOM?src=hash&amp;ref_src=twsrc%5Etfw">#DOM</a> Based <a href="https://twitter.com/hashtag/XSS?src=hash&amp;ref_src=twsrc%5Etfw">#XSS</a> in <a href="https://twitter.com/hashtag/Google?src=hash&amp;ref_src=twsrc%5Etfw">#Google</a>.<a href="https://t.co/tqt3nbRNJX">https://t.co/tqt3nbRNJX</a><a href="https://twitter.com/hashtag/VRP?src=hash&amp;ref_src=twsrc%5Etfw">#VRP</a> <a href="https://twitter.com/hashtag/XSS?src=hash&amp;ref_src=twsrc%5Etfw">#XSS</a> <a href="https://twitter.com/hashtag/Google?src=hash&amp;ref_src=twsrc%5Etfw">#Google</a> //cc:<a href="https://twitter.com/sirdarckcat?ref_src=twsrc%5Etfw">@sirdarckcat</a></p>&mdash; Sasi Levi 🎧 (@sasi2103) <a href="https://twitter.com/sasi2103/status/777793598268043264?ref_src=twsrc%5Etfw">September 19, 2016</a></blockquote>
+this XSS's found after reading <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Combination of
+  techniques lead to <a href="https://twitter.com/hashtag/DOM?src=hash&amp;ref_src=twsrc%5Etfw">#DOM</a> Based 
+  <a href="https://twitter.com/hashtag/XSS?src=hash&amp;ref_src=twsrc%5Etfw">#XSS</a> in 
+  <a href="https://twitter.com/hashtag/Google?src=hash&amp;ref_src=twsrc%5Etfw">#Google</a>.
+  <a href="https://t.co/tqt3nbRNJX">https://t.co/tqt3nbRNJX</a><a href="https://twitter.com/hashtag/VRP?src=hash&amp;ref_src=twsrc%5Etfw">
+  #VRP</a>
+  <a href="https://twitter.com/hashtag/XSS?src=hash&amp;ref_src=twsrc%5Etfw">#XSS</a>
+  <a href="https://twitter.com/hashtag/Google?src=hash&amp;ref_src=twsrc%5Etfw">#Google</a> 
+  //cc:<a href="https://twitter.com/sirdarckcat?ref_src=twsrc%5Etfw">@sirdarckcat</a></p>&mdash; Sasi Levi 🎧 (@sasi2103)
+  <a href="https://twitter.com/sasi2103/status/777793598268043264?ref_src=twsrc%5Etfw">September 19, 2016</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
- google earthengine is a planetary-scale platform for Earth science data & analysis, decided to take a look, felt it vulnerable and  my perspective was correct,
-when it comes to data, the appalication should be having something like uploading or downloading data, examining the appliaction revealed feature to add data layer from Fusion Table. 
- i would mention here that this feature was available in some accounts and was not in some accounts, honestly till now i dont know why!
- uploading the data, showed that the table name stored and without sanitazing but wait, the response was appliaction/json , checking the http headers also showed there was neither x-frame-options	nor x-content-type-options, as some of learn that im telling the perfect conditions to get an xss on IE 11 by forcing the content-type to be text/html . 
- <mark>@cure53berlin 's resaerch</mark> shows a trick how to do that. their research is a treasure i highly recommend reading it carefully.
-this was a self-stored XSS till i discovered that the adding the data was lacking the CSRF protection,combining all these issues i could XSS the victim account, sometimes bugs are looking for ya .
- <iframe width="560" height="315" src="https://www.youtube.com/embed/Qy_Ndkd86rg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+ google earthengine is a planetary-scale platform for Earth science data & analysis, decided to take a look, felt
+  it vulnerable and  my perspective was correct,
+when it comes to data, the appalication should be having something like uploading or downloading data, examining
+  the appliaction revealed feature to add data layer from Fusion Table. </br>
+ i would mention here that this feature was available in some accounts and was not in some accounts, honestly till now i dont 
+  know why!
+ uploading the data, showed that the table name stored and without sanitazing but wait, the response was appliaction/json ,
+  checking the http headers also showed there was neither x-frame-options	nor x-content-type-options, as some of you learn that i am 
+  telling the perfect conditions to get an xss on IE 11 by forcing the content-type to be text/html . 
+ <mark>@cure53berlin 's resaerch</mark> shows a trick how to do that. their research is a treasure i highly recommend reading
+it carefully.</br>
+this was a self-stored XSS till i discovered that the adding the data was lacking the CSRF protection,combining all these issues:</br>
+<ul>
+  <li>application/json response </li>
+  <li>attacker has control over input within it ( < > is not sanitized )</li>
+  <li>vulnerable to clickjacking. </li>
+  <li>csrf to store the XSS in victim account. </li>
+</ul> 
+
+  i could XSS the victim account, sometimes bugs are looking for ya .
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/Qy_Ndkd86rg" frameborder="0" allow="autoplay; encrypted-media"
+         allowfullscreen></iframe>
 </font></p>
 
-
 <p>
-these bugs were all i could collect, still there two or three high-bounty bugs but i couldnt find them, i hope you didnt get bored reading it. i highlighted some of advices that helps you with google vrp, i would like to thank google security team,especially  and @sirdarckcat this guy is a strong bridge betweeen hunters and google vrp. 
- peace upon you.
- </p>
-
+<font size="5" color="black">
+these bugs were all i could collect, still there two or three high-bounty bugs but i couldnt find them, i hope you didnt get bored 
+ reading it. i highlighted some of advices that helps you with google vrp, i would like to thank google security team,especially
+  @sirdarckcat this guy is a strong bridge between hunters and google vrp, just leave a comment if you feel to at 
+ <a href=https://twitter.com/missoum1307> @missoum1307 
+ </a> peace upon you.
+ </font>
+</p>
 
  
