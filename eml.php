@@ -1,3 +1,3 @@
-<?php header('Content-type: text/html; charset=utf-8'); ?>
+<?php header('Content-Type: text/javascript; charset=UTF-8'); ?>
 
 <html><script>alert(document.domain)</script></html>
