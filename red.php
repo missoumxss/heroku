@@ -1,2 +1,2 @@
-<?php header('Content-Type: text/html; charset=utf-8'); ?> 
+<?php header('Content-Type: qqqq'); ?> 
 qqq
