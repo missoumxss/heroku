@@ -1,1 +1,1 @@
-<?php header('location: https://explorer.earthengine.google.com/prod/api/value?json={"type":"CompoundValue","scope":[["0",{"type":"Invocation","arguments":{"tableId":"ft:18aIkHMBXsztSUD9Dxbze8sjG-ThqFIuhCXp5UcCY"},"functionName":"Collection.loadTable"}],["1",{"type":"Invocation","arguments":{"collection":{"type":"ValueRef","value":"0"},"property":"Number"},"functionName":"AggregateFeatureCollection.histogram"}]],"value":{"type":"ValueRef","value":"1"}}') ?> 
+<?php header('location: http://evil.com/<img/src=x>/') ?> 
