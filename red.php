@@ -1,2 +1,1 @@
-<?php header('Content-Type: qqqq'); ?> 
-qqq
+<?php header('Location: http://services.google.com/fh/files/helpcenter/ce_doc_dd.pdf'); ?> 
