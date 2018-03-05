@@ -1,3 +1,3 @@
-<?php
-header('Content-Type: application/json') ?>
-secret12345
+<base href="view-source:https://">
+
+<a href=google.com>evil</a>
