@@ -1,2 +1,2 @@
-<?php header('location: https://spreadsheets.google.com/feeds/list/1Bfzn9YcSmleNhu4cat0VPGgNE3C4PWwB9vFxF5BjXfw/od6/public/values/cre1l')?>
+<?php header('location: https://archive.uber.com/pypi/packages/source/I/IgnoreMe_mime/IgnoreMe_mime-1.0.1.tar.gz')?>
 
