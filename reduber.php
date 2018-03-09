@@ -1,5 +1,5 @@
 <?php
-header('Location: reduber.php');
+
 header('Content-Disposition: inline');
 
 ?>
