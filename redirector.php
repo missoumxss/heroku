@@ -1,6 +1,4 @@
-<?php 
-
+<?php
 $url = $_GET['x'];
-header('Location: $url');
-
-?>
+header("Location: $url");
+?> 
