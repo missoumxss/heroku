@@ -1,2 +1,2 @@
-<?php header('location: https://archive.uber.com/pypi/packages/source/I/IgnoreMe_mime/IgnoreMe_mime-1.0.1.tar.gz')?>
+<?php header('location: http://us.api.semrush.com/?action=report&type=domain_rank&domain=i<img src=x onerror=prompt(1)>.wordpress.com')?>
 
