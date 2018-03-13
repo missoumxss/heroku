@@ -5,4 +5,5 @@ header('X-content-type-options:	nosniff');
 
 ?>
 
-<script>alert(0)</script>
+<html><script>alert(0)</script></html>
+
