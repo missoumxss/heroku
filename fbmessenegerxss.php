@@ -1,7 +1,7 @@
 <?php 
 header('Content-type: application/octet-stream');
 header('X-content-type-options: nosniff');
-header('Content-location: https://evil.Co"onmouseover=aa"aaa=a');
+header('Content-location: https://evil.Co"onmouseover=aa"a<img src=x>aa=a');
 
 
 ?>
