@@ -1,7 +1,7 @@
 <?php 
 header('Content-type: application/octet-stream');
 header('X-content-type-options: nosniff');
-header('Content-location: evil.Com');
+header('Content-location: https://evil.Com');
 
 
 ?>
