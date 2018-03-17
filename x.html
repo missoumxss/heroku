@@ -1,0 +1,12 @@
+var x = new XMLHttpRequest();
+var url = "ftp://uploads.google.com/";
+
+x.onreadystatechange= function(){
+  if(x.readyState == x.DONE) {
+   alert(x.responseText);
+}}
+
+
+x.open("GET", url, true);
+x.send(null);
+
