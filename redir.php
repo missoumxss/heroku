@@ -1,3 +1,3 @@
 <?php
-header('location: https://www.google.com/jsapi');
+header('location: https://explorer.apis.google.com/embedded.js');
 ?>
