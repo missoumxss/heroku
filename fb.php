@@ -1,5 +1,5 @@
 <?php
-header('Content-Type: application/octet-stream');
+header('Location: ftp://0.0.0.0:22/');
 
 ?>
-����V�<html><script>alert(0)</script></html>d
+
