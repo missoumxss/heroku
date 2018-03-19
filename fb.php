@@ -1,5 +1,5 @@
 <?php
-header('Location: ftp://0.0.0.0:22/');
+header('Location: http://0.0.0.0:22/');
 
 ?>
 
