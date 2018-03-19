@@ -1,5 +1,5 @@
 <?php
-header('Location: file:///etc/passwd');
+header('Location: ftp://');
 
 ?>
 
