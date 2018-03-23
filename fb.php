@@ -1,5 +1,5 @@
 <?php
-header('Location: ftp://127.0.0.1/');
+header('Location: https://api.vhx.tv/<scritp>alert(0)</script>');
 
 ?>
 
