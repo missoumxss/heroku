@@ -13,5 +13,7 @@ if(!empty($_GET['c'])) {
     fwrite($logfile, $_GET['c']);
     fclose($logfile);
 }
-
+?>
+    
+    
 </html>
