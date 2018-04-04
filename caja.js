@@ -1,1 +1,1 @@
-device_type=phone&authenticity_token=5ce0547fb6f4695d137a402a9b3dda8920d87278&device%5Bcountry_code%5D=213&country_code=213&edit_phone=true&iso_code=DZ&phone_number=781077547
+device_type=phone&authenticity_token=5ce0547fb6f4695d137a402a9b3dda8920d87278&device[country_code]=213&country_code=213&edit_phone=true&iso_code=DZ&phone_number=781077547
