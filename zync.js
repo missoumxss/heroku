@@ -1,1 +1,1 @@
-account_type=google&email=attacker%40evil.com&admin=true
+account_type=google&email=attacker@evil.com&admin=true
