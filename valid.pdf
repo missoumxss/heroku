@@ -3,6 +3,8 @@
 % Ange Albertini BSD Licence 2012
 % modified by insertscript
 
+%%00PDF-1. % can be truncated to %PDF-\0
+
 1 0 obj <<>>
 stream
 <xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/">
