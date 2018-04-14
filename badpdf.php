@@ -6,7 +6,7 @@ header('Content-Type: text/plain');
 % Ange Albertini BSD Licence 2012
 % modified by insertscript
 
-%PDF-1. % can be truncated to %PDF-\0
+%%00PDF-1. % can be truncated to %%00PDF-\0
 
 1 0 obj <<>>
 stream
