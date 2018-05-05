@@ -8,7 +8,7 @@ $datetime = mktime();
 $useragent = $_SERVER['HTTP_USER_AGENT']; 
 $remotehost = @getHostByAddr($ipaddress);
 
-/ Create log line 
+// Create log line 
 $logline = $ipaddress . '|' . $referrer . '|' . $datetime . '|' . $useragent . '|' . $remotehost . '|' . $page . "\n"; 
 
 // Write to log file: 
