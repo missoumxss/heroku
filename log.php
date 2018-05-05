@@ -2,7 +2,7 @@
 
 $ipaddress = $_SERVER['REMOTE_ADDR']; 
 $referrer = $_SERVER['HTTP_REFERER']; 
-$datetime = mktime(); 
+$datetime = date('Y-m-d H:i:s');
 $useragent = $_SERVER['HTTP_USER_AGENT']; 
 $remotehost = @getHostByAddr($ipaddress);
 
