@@ -1,3 +1,9 @@
+<?php
+
+include 'log.php';
+
+?>
+
 <!doctype html>
 <html amp lang="en">
   <head>
