@@ -7,7 +7,7 @@ $useragent = $_SERVER['HTTP_USER_AGENT'];
 $remotehost = @getHostByAddr($ipaddress);
 
 
-file_put_contents('log.txt',print_r(' $ipaddress . '|' . $referrer . '|' . $datetime . '|' . $useragent . '|' . $remotehost . '\n'; ',true));
+file_put_contents('log.txt',print_r("$ipaddress . '|' . $referrer . '|' . $datetime . '|' . $useragent . '|' . $remotehost . '\n';",true));
 
 
 ?> 
