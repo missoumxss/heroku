@@ -12,7 +12,7 @@ $remotehost = @getHostByAddr($ipaddress);
 $logline = $ipaddress . '|' . $referrer . '|' . $datetime . '|' . $useragent . '|' . $remotehost . '|' . $page . "\n"; 
 
 // Write to log file: 
-$logfile = '/log.txt'; 
+$logfile = 'log.txt'; 
 
 // Open the log file in "Append" mode 
 if (!$handle = fopen($logfile, 'a+')) { 
