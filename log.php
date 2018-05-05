@@ -8,22 +8,6 @@ $datetime = mktime();
 $useragent = $_SERVER['HTTP_USER_AGENT']; 
 $remotehost = @getHostByAddr($ipaddress);
 
-// Create log line 
-$logline = $ipaddress . '|' . $referrer . '|' . $datetime . '|' . $useragent . '|' . $remotehost . '|' . $page . "\n"; 
 
-// Write to log file: 
-$logfile = 'log.txt'; 
-
-// Open the log file in "Append" mode 
-if (!$handle = fopen($logfile, 'a+')) { 
-    die("Failed to open log file"); 
-} 
-
-// Write $logline to our logfile. 
-if (fwrite($handle, $logline) === FALSE) { 
-    die("Failed to write to log file"); 
-} 
-   
-fclose($handle);
-
-?>
+file_put_contents("log.txt",print_r($ipaddress . '|' . $referrer . '|' . $datetime . '|' . $useragent . '|' . $remotehost . '|' . $page . "\n"; ,true));
+?> 
