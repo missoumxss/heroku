@@ -1,1 +1,1 @@
-<?php header('Location: https://code.earthengine.google.com/javascript/datasetsViewer.js'); ?> 
+<?php header('Location: https://www.google.com/safebrowsing/alerts/javascript/astools.js;sss%5C..%5C'); ?> 
