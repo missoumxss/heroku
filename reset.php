@@ -1,6 +1,6 @@
 <?php
 
-setcookie('BPLI', '', (time()-2592000), '/', '.'.get_domain(), 0);
+setcookie('BPLI', '', (time()-2592000), '/', '.evil.com', 0);
 
 ?>
 
