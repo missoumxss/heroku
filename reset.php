@@ -1,5 +1,8 @@
 <?php
-echo '<pre>' setcookie('BPLI', '', (time()-2592000), '/', '.'.get_domain(), 0);'<pre>'
+
+setcookie('BPLI', '', (time()-2592000), '/', '.'.get_domain(), 0);
+
+echo "'BPLI', '', time()-2592000, '/', '.'.get_domain(), 0"
     $reset = FALSE;
 
     if(@$_GET['a'] == 'password-code' && @$_POST['email'] == @$_POST['vemail']) {
