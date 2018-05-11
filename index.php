@@ -34,7 +34,7 @@ include 'log.php';
   </head>
   <body>
     <p>&#x22;&#x3E;&#x3C;img src=x&#x3E;&#x3C;script&#x3E;alert(0)&#x3C;/script&#x3E;</p>
-
+    <a href=javascript:alert(0)>xss</a>
 
   <amp-iframe onmouseover=alert(0) width="300"
   title="Netflix House of Cards branding: The Stack"
