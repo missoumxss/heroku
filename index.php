@@ -20,7 +20,8 @@ include 'log.php';
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
-        "@type": "NewsArticle",
+        "@type": "%PDF-1. %0d%0a 
+        <''>",
         "headline": "Open-source framework for publishing content",
         "datePublished": "2015-10-07T12:02:41Z",
         "image": [
