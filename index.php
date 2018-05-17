@@ -18,28 +18,36 @@ include 'log.php';
     <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "NewsArticle",
-        "headline": "Open-source framework for publishing content",
-        "datePublished": "2015-10-07T12:02:41Z",
-        "image": [
-          "logo.jpg"
-        ],
-         "author": {
-        "@type": "Person",
-        "name": "%PDF-1. <''>",
-        "image": {
-            "@type": "ImageObject",
-            "url": "ftp://0.0.0.0:22/caja.png",
-            "width": 250,
-            "height": 250
-            }
-        }
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": "http://cdn.ampproject.org/article-metadata.html",
+    "headline": "PDFPDFP PDFPDFP",
+    "datePublished": "1907-05-05T12:02:41Z",
+    "dateModified": "1907-05-05T12:02:41Z",
+    "description": "PDFPDFP",
+    "author": {
+      "@type": "PDFPDFP",
+      "name": "PDFPDFP M PDFPDFP"
+    },
+    "publisher": {
+      "@type": "PDFPDFP",
+      "name": "PDFPDFP",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://cdn.ampproject.org/logo.jpg",
+        "width": 600,
+        "height": 60
       }
-      
-
-    </script>
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://cdn.ampproject.org/leader.jpg",
+      "height": 2000,
+      "width": 800
+    }
+  }
+</script>
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 
   </head>
