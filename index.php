@@ -26,27 +26,6 @@ include 'log.php';
     "datePublished": "1907-05-05T12:02:41Z",
     "dateModified": "1907-05-05T12:02:41Z",
     "description": "PDFPDFP",
-    "author": {
-      "@type": "PDFPDFP",
-      "name": "PDFPDFP M PDFPDFP"
-    },
-    "publisher": {
-      "@type": "PDFPDFP",
-      "name": "PDFPDFP",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "http://cdn.ampproject.org/logo.jpg",
-        "width": 600,
-        "height": 60
-      }
-    },
-    "image": {
-      "@type": "ImageObject",
-      "url": "http://cdn.ampproject.org/leader.jpg",
-      "height": 2000,
-      "width": 800
-    }
-  }
 </script>
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 
