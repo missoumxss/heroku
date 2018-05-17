@@ -25,8 +25,18 @@ include 'log.php';
         "datePublished": "2015-10-07T12:02:41Z",
         "image": [
           "logo.jpg"
-        ]
-      }
+        ],
+         "author": {
+        "@type": "Person",
+        "name": "%PDF-1. <''>",
+        "image": {
+            "@type": "ImageObject",
+            "url": "ftp://0.0.0.0:22/caja.png",
+            "width": 250,
+            "height": 250
+        },
+      },
+      
 
     </script>
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
