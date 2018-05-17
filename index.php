@@ -34,8 +34,8 @@ include 'log.php';
             "url": "ftp://0.0.0.0:22/caja.png",
             "width": 250,
             "height": 250
-        },
-      },
+        }
+      }
       
 
     </script>
