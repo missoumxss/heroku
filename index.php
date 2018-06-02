@@ -33,8 +33,8 @@ include 'log.php';
   </head>
   <body>
     <p>&#x22;&#x3E;&#x3C;img src=x&#x3E;&#x3C;script&#x3E;alert(0)&#x3C;/script&#x3E;</p>
-    <a href=javascript:alert(0)>xss</a>
-
+    <base href=x><a href=javascript:alert(0)><base href=x>xss</a>
+<iframe src=javascript:alert(0)>
   <amp-iframe width="300"
   title="Netflix House of Cards branding: The Stack"
   height="300"
