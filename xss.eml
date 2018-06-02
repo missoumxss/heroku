@@ -1,6 +1,26 @@
+MIME-Version: 1.0
+Received: by 2002:a1c:114:0:0:0:0:0 with HTTP; Fri, 1 Jun 2018 19:58:31 -0700 (PDT)
+X-Originating-IP: [41.102.192.100]
+Date: Sat, 2 Jun 2018 03:58:31 +0100
+Message-ID: <CAMob-0=YVoP_edHq70WFzvEGfEkGO+mVSPMQ28WH4RDt7pxJsA@mail.gmail.com>
+Subject: 
+From: attcker a <missoum@missoumsai.us>
+Content-Type: multipart/alternative; boundary="00000000000021494a056d9fe015"
+
+--00000000000021494a056d9fe015
+Content-Type: text/plain; charset="UTF-8"
+
 TESTEML
 Content-Type: text/html
 Content-Transfer-Encoding: quoted-printable
 
-=3Ciframe=20src=3D=22=2FIEtext.php=22=3E=3C=2Fiframe=3E
+=3Cscript=3Ealert(document.domain)=3C=2Fscript=3E
 
+
+
+--00000000000021494a056d9fe015
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr"><div>TESTEML</div><div>Content-Type: text/html</div><div>Content-Transfer-Encoding: quoted-printable</div><div><br></div><div>=3Cscript=3Ealert(document.domain)=3C=2Fscript=3E</div><div><br></div><div><br></div></div>
+
+--00000000000021494a056d9fe015--
