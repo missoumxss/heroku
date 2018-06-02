@@ -34,7 +34,7 @@ include 'log.php';
   <body>
     <p>&#x22;&#x3E;&#x3C;img src=x&#x3E;&#x3C;script&#x3E;alert(0)&#x3C;/script&#x3E;</p>
     <base href=x><a href=javascript:alert(0)><base href=x>xss</a>
-<iframe src=javascript:alert(0)>
+
   <amp-iframe width="300"
   title="Netflix House of Cards branding: The Stack"
   height="300"
@@ -50,6 +50,6 @@ include 'log.php';
 
 <embed src=x.swf>
   <object data=x.swf>
-    
+    <iframe src=javascript:alert(0)>
   </body>
 </html>
