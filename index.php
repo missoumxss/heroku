@@ -46,7 +46,7 @@ include 'log.php';
   sandbox="allow-scripts allow-same-origin allow-popups"
   allowfullscreen
   frameborder="0"
-  src="https://bughunt1307.herokuapp.com/xss2.eml">
+  src="https://www.missoumsai.com/xss2.eml">
      <amp-img layout="fill" src="https://foo.com/foo.png"  placeholder></amp-img>
 </amp-iframe>
 
