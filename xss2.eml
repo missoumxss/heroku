@@ -4,3 +4,8 @@ Content-Transfer-Encoding: quoted-printable
 
 =3Cscript=3Ealert(document.domain)=3C=2Fscript=3E
 
+
+Content-Type: text/html
+
+<script>alert(1)</script>
+
