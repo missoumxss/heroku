@@ -2,10 +2,10 @@ TESTEML
 Content-Type: text/html
 Content-Transfer-Encoding: quoted-printable
 
-=3Cscript=3Ealert(document.domain)=3C=2Fscript=3E
+=3Ciframe=20src=3D=22text.txt=22=3E
 
 
 Content-Type: text/html
 
-<script>alert(1)</script>
+<iframe src="text.txt">
 
