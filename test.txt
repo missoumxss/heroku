@@ -1,19 +1,20 @@
 MIME-Version: 1.0
-Received: by 2002:a1c:114:0:0:0:0:0 with HTTP; Sat, 2 Jun 2018 19:49:13 -0700 (PDT)
-Date: Sun, 3 Jun 2018 03:49:13 +0100
-Message-ID: <CAMob-0kda-MQVsatfczOC6MXRNHQzSNmtjfzf7Rn1AC6Et_hSA@mail.gmail.com>
+Received: by 2002:a1c:114:0:0:0:0:0 with HTTP; Sat, 2 Jun 2018 20:41:29 -0700 (PDT)
+Date: Sun, 3 Jun 2018 04:41:29 +0100
+Message-ID: <CAMob-0=f2Q6dmVus72i7jS=UTOe1u0WufWge1jjerNXsHoL3Gw@mail.gmail.com>
 Subject: 
 From: attcker a <missoum@missoumsai.us>
-Content-Type: multipart/alternative; boundary="000000000000b8723b056db3dccf"
+Content-Type: multipart/alternative; boundary="000000000000a2f693056db497cb"
 
---000000000000b8723b056db3dccf
+--000000000000a2f693056db497cb
 Content-Type: text/plain; charset="UTF-8"
 
-<script>alert(1)</script>
+test
 
---000000000000b8723b056db3dccf
+--000000000000a2f693056db497cb
 Content-Type: text/html; charset="UTF-8"
 
-<div dir="ltr">&lt;script&gt;alert(1)&lt;/script&gt;</div>
+<div dir="ltr">test</div>
 
---000000000000b8723b056db3dccf--
+--000000000000a2f693056db497cb--
+
