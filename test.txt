@@ -1,3 +1,4 @@
+<script>alert(0)</script>
 MIME-Version: 1.0
 Received: by 2002:a1c:114:0:0:0:0:0 with HTTP; Sat, 2 Jun 2018 20:41:29 -0700 (PDT)
 Date: Sun, 3 Jun 2018 04:41:29 +0100
@@ -9,7 +10,7 @@ Content-Type: multipart/alternative; boundary="000000000000a2f693056db497cb"
 --000000000000a2f693056db497cb
 Content-Type: text/plain; charset="UTF-8"
 
-test
+<script>alert(1)</script>
 
 --000000000000a2f693056db497cb
 Content-Type: text/html; charset="UTF-8"
