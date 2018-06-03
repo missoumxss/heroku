@@ -7,7 +7,7 @@ include 'log.php';
 <!doctype html>
 <html amp lang="en">
   <head>
-    <base href=x>
+
     <meta name="google-site-verification" content="nCeEmY1DVP_k55IELPFaI8oPiW7KVqqp_SuuUjC2yT8" />
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
@@ -32,8 +32,7 @@ include 'log.php';
 
   </head>
   <body>
-    
-   <iframe src="https://bughunt1307.herokuapp.com/xss2.eml">
+
 
 
       
@@ -47,7 +46,7 @@ include 'log.php';
   sandbox="allow-scripts allow-same-origin allow-popups"
   allowfullscreen
   frameborder="0"
-  src="https://mail.google.com/mail/u/2/">
+  src="https://bughunt1307.herokuapp.com/xss2.eml">
      <amp-img layout="fill" src="https://foo.com/foo.png"  placeholder></amp-img>
 </amp-iframe>
 
