@@ -10,6 +10,8 @@ Content-Type: multipart/alternative; boundary="00000000000034ad02056db3b2b1"
 Content-Type: text/plain; charset="UTF-8"
 
 
+=3Cscript=3Ealert(document.domain)=3C=2Fscript=3E
+
 
 --00000000000034ad02056db3b2b1
 Content-Type: text/html; charset="UTF-8"
