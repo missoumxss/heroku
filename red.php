@@ -1,1 +1,1 @@
-<?php header('Location: https://www.google.com/safebrowsing/alerts/javascript/astools.js;/./././././amp/evil.com'); ?> 
+<?php header('Location: https://www.google.com/safebrowsing/alerts/javascript/astools.js;/%252e%252e/aaa'); ?> 
