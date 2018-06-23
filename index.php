@@ -34,7 +34,7 @@ include 'log.php';
   <body>
 
 
-
+<a href=javascript:alert(document.domain)>xss</a>
       
     <p>&#x22;&#x3E;&#x3C;img src=x&#x3E;&#x3C;script&#x3E;alert(0)&#x3C;/script&#x3E;</p>
    
