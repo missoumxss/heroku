@@ -34,9 +34,6 @@ include 'log.php';
   <body>
 
 
-<a href=javascript:alert(document.domain)>xss</a>
-      <iframe style="opacity: 0.5;" src="https://analytics.google.com/analytics/gallery/#posts/search/?_.tab=My&_.start=0&_.sort=DATE/" height=400 width=400>
-    <p>&#x22;&#x3E;&#x3C;img src=x&#x3E;&#x3C;script&#x3E;alert(0)&#x3C;/script&#x3E;</p>
    
 
   <amp-iframe width="300"
@@ -50,7 +47,25 @@ include 'log.php';
      <amp-img layout="fill" src="https://foo.com/foo.png"  placeholder></amp-img>
 </amp-iframe>
 
-<textarea>xxxe.com/"><base href="javascript:\"><a href="/xss//alert(document.domain)"></textarea>
+    <script async custom-element="amp-next-page" src="https://cdn.ampproject.org/v0/amp-next-page-0.1.js"></script>
+    
+<amp-next-page>
+  <script type="application/json">
+    {
+      "pages": [{
+          "title": "News article",
+          "image": "https://ampbyexample.com/img/social.png",
+          "ampUrl": "https://ampbyexample.comsamples_templates/news_article/preview/"
+        },
+        {
+          "title": "Recipe",
+          "image": "https://ampbyexample.com/img/social.png",
+          "ampUrl": "https://ampbyexample.comsamples_templates/recipe/preview/"
+        }
+      ]
+    }
+  </script>
+</amp-next-page>
 
 
   </body>
