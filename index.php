@@ -55,7 +55,7 @@ include 'log.php';
       "pages": [{
           "title": "News article",
           "image": "https://ampbyexample.com/img/social.png",
-          "ampUrl": "https://ampbyexample.comsamples_templates/news_article/preview/"
+          "ampUrl": "javascript:alert(0)"
         },
         {
           "title": "Recipe",
