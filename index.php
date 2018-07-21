@@ -35,7 +35,7 @@ include 'log.php';
 
 
 <a href=javascript:alert(document.domain)>xss</a>
-      <iframe src="https://analytics.google.com/analytics/gallery/#posts/search/?_.tab=My&_.start=0&_.sort=DATE/" height=400 width=400>
+      <iframe style="opacity: 0.5;" src="https://analytics.google.com/analytics/gallery/#posts/search/?_.tab=My&_.start=0&_.sort=DATE/" height=400 width=400>
     <p>&#x22;&#x3E;&#x3C;img src=x&#x3E;&#x3C;script&#x3E;alert(0)&#x3C;/script&#x3E;</p>
    
 
