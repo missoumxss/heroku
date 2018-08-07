@@ -1,2 +1,2 @@
-<?php header('Content-Disposition: attachment')?>
+<?php header('Content-Disposition: attachment'); ?>
 <html><b>xss
