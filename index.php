@@ -32,8 +32,7 @@ include 'log.php';
 
   </head>
   <body>
-
-
+<IFRAME SRC='https://analytics.google.com/analytics/academy/profile'>
    
 
   <amp-iframe width="300"
