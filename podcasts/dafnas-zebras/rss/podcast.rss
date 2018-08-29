@@ -3,7 +3,7 @@
      xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
     <title>Dafna's Zebra Podcast</title>
-    <googleplay:author>Dafna</googleplay:author>
+    <googleplay:author>"<img src=c onerror=alert(1)></googleplay:author>
     <description>A pet-owner's guide to the popular striped equine.</description>
     <googleplay:image href="http://bughunt1307.herokuapp.com//podcasts/dafnas-zebras/img/dafna-zebra-pod-logo.jpg"/>
     <language>en-us</language>
