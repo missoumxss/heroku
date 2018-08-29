@@ -5,14 +5,14 @@
     <title>Dafna's Zebra Podcast</title>
     <googleplay:author>Dafna</googleplay:author>
     <description>A pet-owner's guide to the popular striped equine.</description>
-    <googleplay:image href="http://www.example.com/podcasts/dafnas-zebras/img/dafna-zebra-pod-logo.jpg"/>
+    <googleplay:image href="http://bughunt1307.herokuapp.com//podcasts/dafnas-zebras/img/dafna-zebra-pod-logo.jpg"/>
     <language>en-us</language>
-    <link>https://www.example.com/podcasts/dafnas-zebras/</link>
+    <link>http://bughunt1307.herokuapp.com//podcasts/dafnas-zebras/</link>
     <item>
       <title>Top 10 myths about caring for a zebra</title>
       <description>Here are the top 10 misunderstandings about the care, feeding, and breeding of these lovable striped animals.</description>
       <pubDate>Tue, 14 Mar 2017 12:00:00 GMT</pubDate>
-      <enclosure url="https://www.example.com/podcasts/dafnas-zebras/audio/toptenmyths.mp3"
+      <enclosure url="http://bughunt1307.herokuapp.com/podcasts/dafnas-zebras/audio/toptenmyths.mp3"
                  type="audio/mpeg" length="34216300"/>
       <itunes:duration>30:00</itunes:duration>
       <guid>dzpodtop10</guid>
@@ -21,7 +21,7 @@
       <title>Keeping those stripes neat and clean</title>
       <description>Keeping your zebra clean is time consuming, but worth the effort.</description>
       <pubDate>Fri, 24 Feb 2017 12:00:00 GMT</pubDate>
-      <enclosure url="https://www.example.com/podcasts/dafnas-zebras/audio/cleanstripes.mp3"
+      <enclosure url="http://bughunt1307.herokuapp.com/podcasts/dafnas-zebras/audio/cleanstripes.mp3"
                  type="audio/mpeg" length="26004388"/>
       <itunes:duration>22:48</itunes:duration>
       <guid>dzpodclean</guid>
