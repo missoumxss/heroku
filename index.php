@@ -32,7 +32,7 @@ include 'log.php';
 
   </head>
   <body>
-<IFRAME SRC='https://analytics.google.com/analytics/academy/profile'>
+
    
 
   <amp-iframe width="300"
@@ -42,7 +42,7 @@ include 'log.php';
   sandbox="allow-scripts allow-same-origin allow-popups"
   allowfullscreen
   frameborder="0"
-  src="https://www.missoumsai.com/xss2.eml">
+  src="https://bughunt1307.herokuapp.com/attach.html">
      <amp-img layout="fill" src="https://foo.com/foo.png"  placeholder></amp-img>
 </amp-iframe>
 
