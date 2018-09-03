@@ -3,7 +3,6 @@ header('content-type: text/csv; charset=US-ASCII');
 header('content-disposition: attachment; filename="google.csv"');
 header('X-Content-Type-Options: nosniff');
 ?>
-
 Name,Given Name,Additional Name,Family Name,Yomi Name,Given Name Yomi,Additional Name Yomi,Family Name Yomi,Name Prefix,Name Suffix,Initials,Nickname,Short Name,Maiden Name,Birthday,Gender,Location,Billing Information,Directory Server,Mileage,Occupation,Hobby,Sensitivity,Priority,Subject,Notes,Group Membership
 ,,,,,,,,,,,,,,,,,,,,,,,,,"%PDF-1.
 %PDF-1.
