@@ -84,8 +84,8 @@ header('Content-Encoding: none');
 if (extension_loaded('curl')) {
     // Use cURL extension
     $ch = curl_init($url);
-//  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-//  curl_setopt($ch, CURLOPT_MAXREDIRS, 10);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+    curl_setopt($ch, CURLOPT_MAXREDIRS, 10);
     curl_exec($ch);
     curl_close($ch);
 } else {
