@@ -76,7 +76,7 @@ if (!preg_match('#^https?://#', $_GET['url'])) {
 $search  = array(  '%',   '#',   ' ');
 $replace = array('%25', '%23', '%20');
 $url     = str_replace($search, $replace, $_GET['url']);
-
+   
 // Disable compression
 header('Content-Encoding: none');
 
@@ -84,13 +84,14 @@ header('Content-Encoding: none');
 if (extension_loaded('curl')) {
     // Use cURL extension
     $ch = curl_init($url);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-    curl_setopt($ch, CURLOPT_MAXREDIRS, 10);
+   //  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+   // curl_setopt($ch, CURLOPT_MAXREDIRS, 10);
     curl_exec($ch);
     curl_close($ch);
 } else {
     // Use the http:// wrapper
     readfile($url);
 }
+
 
 ?>
