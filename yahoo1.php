@@ -1,6 +1,6 @@
 <?php 
 
-header("Location: tourbuilder.withgoogle.com/tours/ahJzfmd3ZWItdG91cmJ1aWxkZXJyEQsSBFRvdXIYgICg7tb6oAsM/csv");
+header("Location: https://tourbuilder.withgoogle.com/tours/ahJzfmd3ZWItdG91cmJ1aWxkZXJyEQsSBFRvdXIYgICg7tb6oAsM/csv");
 
 
 
