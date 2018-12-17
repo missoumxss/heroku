@@ -2,5 +2,5 @@ TESTEML
 Content-Type: text/html
 Content-Transfer-Encoding: quoted-printable
 
-=3Ciframe=20src=3D=22test1.php=22=3E
+=3Ciframe=20src=3D=22xss.php=3Fname=3Dxxx=3Cimg=2520src=3Dx=2520onerror=3Dalert(2)=3E=22=3E
 
