@@ -53,6 +53,7 @@ include 'log.php';
   
   
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+<script async custom-element="amp-next-page" src="https://cdn.ampproject.org/v0/amp-next-page-0.1.js"></script>
 
   </head>
   <body>
@@ -70,8 +71,7 @@ include 'log.php';
      <amp-img layout="fill" src="https://foo.com/foo.png"  placeholder></amp-img>
 </amp-iframe>
 
-    <script async custom-element="amp-next-page" src="https://cdn.ampproject.org/v0/amp-next-page-0.1.js"></script>
-    
+
 <amp-next-page>
   <script type="application/json">
     {
