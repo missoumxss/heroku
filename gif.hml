@@ -1,0 +1,3 @@
+<html>
+<a href="javascript:alert(document.domain);">xss</a>
+</html>
