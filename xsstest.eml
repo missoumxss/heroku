@@ -1,18 +1,53 @@
-MIME-Version: 1.0
-Date: Thu, 7 Mar 2019 01:41:37 +0100
-Message-ID: <CAF9sqrJHXCYu+EWAQ-_M3ToOYbLqWhzzDphEU-QQy7n4sGKZPQ@mail.gmail.com>
-Subject: 
-From: "aaa${7*7}{{7*7}}xxx aaa${7*7}{{7*7}}xxx" <admin@missoumsai.com>
-Content-Type: multipart/alternative; boundary="0000000000007596b90583765e09"
 
---0000000000007596b90583765e09
+MIME-Version: 1.0
+Date: Thu, 7 Mar 2019 01:52:00 +0100
+Message-ID: <CAF9sqrJtvtYHkyo9LCw7ZjkMS29QbjNbFYsJLdjPaS=QNjx3xA@mail.gmail.com>
+Subject: test"><&#x27;&#x22;--&#x3E;&#x3C;/script&#x3E;&#x3C;img src=x onerror=&#x27;;alert(1);&#x27;&#x3E;
+From: "aaa${7*7}{{7*7}}xxx aaa${7*7}{{7*7}}xxx" <admin@missoumsai.com>
+To: missoumozil@gmail.com
+Content-Type: multipart/mixed; boundary="0000000000009ea56305837683d8"
+
+--0000000000009ea56305837683d8
+Content-Type: multipart/alternative; boundary="0000000000009ea55e05837683d6"
+
+--0000000000009ea55e05837683d6
 Content-Type: text/plain; charset="UTF-8"
 
-test"><
+test"><&#x27;&#x22;--&#x3E;&#x3C;/script&#x3E;&#x3C;img src=x
+onerror=&#x27;;alert(1);&#x27;&#x3E;
 
---0000000000007596b90583765e09
+test"><&#x27;&#x22;--&#x3E;&#x3C;/script&#x3E;&#x3C;img src=x
+onerror=&#x27;;alert(1);&#x27;&#x3E;
+
+--0000000000009ea55e05837683d6
 Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
 
-<div dir="ltr">test&quot;&gt;&lt;</div>
+<div dir=3D"ltr"><div dir=3D"ltr">test&quot;&gt;&lt;&amp;#x27;&amp;#x22;--&=
+amp;#x3E;&amp;#x3C;/script&amp;#x3E;&amp;#x3C;img src=3Dx onerror=3D&amp;#x=
+27;;alert(1);&amp;#x27;&amp;#x3E;</div><div dir=3D"ltr"><br></div><div dir=
+=3D"ltr"><a href=3D"http://test&quot;&gt;&lt;&amp;#x27;&amp;#x22;--&amp;#x3=
+E;&amp;#x3C;/script&amp;#x3E;&amp;#x3C;img src=3Dx onerror=3D&amp;#x27;;ale=
+rt(1);&amp;#x27;&amp;#x3E;">test&quot;&gt;&lt;&amp;#x27;&amp;#x22;--&amp;#x=
+3E;&amp;#x3C;/script&amp;#x3E;&amp;#x3C;img src=3Dx onerror=3D&amp;#x27;;al=
+ert(1);&amp;#x27;&amp;#x3E;</a><br></div></div>
 
---0000000000007596b90583765e09--
+--0000000000009ea55e05837683d6--
+--0000000000009ea56305837683d8
+Content-Type: message/rfc822; name="xsstest.eml"
+Content-Disposition: attachment; filename="xsstest.eml"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: f_jsxx1m1i0
+Content-ID: <f_jsxx1m1i0>
+
+TUlNRS1WZXJzaW9uOiAxLjAKRGF0ZTogVGh1LCA3IE1hciAyMDE5IDAxOjQxOjM3ICswMTAwCk1l
+c3NhZ2UtSUQ6IDxDQUY5c3FySkhYQ1l1K0VXQVEtX00zVG9PWWJMcVdoenpEcGhFVS1RUXk3bjRz
+R0taUFFAbWFpbC5nbWFpbC5jb20+ClN1YmplY3Q6IApGcm9tOiAiYWFhJHs3Kjd9e3s3Kjd9fXh4
+eCBhYWEkezcqN317ezcqN319eHh4IiA8YWRtaW5AbWlzc291bXNhaS5jb20+CkNvbnRlbnQtVHlw
+ZTogbXVsdGlwYXJ0L2FsdGVybmF0aXZlOyBib3VuZGFyeT0iMDAwMDAwMDAwMDAwNzU5NmI5MDU4
+Mzc2NWUwOSIKCi0tMDAwMDAwMDAwMDAwNzU5NmI5MDU4Mzc2NWUwOQpDb250ZW50LVR5cGU6IHRl
+eHQvcGxhaW47IGNoYXJzZXQ9IlVURi04IgoKdGVzdCI+PAoKLS0wMDAwMDAwMDAwMDA3NTk2Yjkw
+NTgzNzY1ZTA5CkNvbnRlbnQtVHlwZTogdGV4dC9odG1sOyBjaGFyc2V0PSJVVEYtOCIKCjxkaXYg
+ZGlyPSJsdHIiPnRlc3QmcXVvdDsmZ3Q7Jmx0OzwvZGl2PgoKLS0wMDAwMDAwMDAwMDA3NTk2Yjkw
+NTgzNzY1ZTA5LS0=
+--0000000000009ea56305837683d8--
