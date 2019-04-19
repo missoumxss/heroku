@@ -3,6 +3,7 @@
 include 'log.php';
 
 ?>
+xss
 <script>alert(document.domain)</script>
 <!doctype html>
 <html amp lang="en">
