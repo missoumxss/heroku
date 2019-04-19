@@ -3,7 +3,7 @@
 include 'log.php';
 
 ?>
-
+<script>alert(document.domain)</script>
 <!doctype html>
 <html amp lang="en">
   <head>
