@@ -3,6 +3,8 @@
 include 'log.php';
 
 ?>
+<img src=x 㖏> onerror=logChr(13711)>
+<img src=x 簏> onerror=logChr(31759)>
 <img src=x ؏> onerror=alert(1551)>
 <img src=x 㣼> onerror=alert(14588)>
 <img src=x 㩏> onerror=alert(14927)>
