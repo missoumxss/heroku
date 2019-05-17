@@ -1,6 +1,6 @@
 <?php
 
-header('content-length: 101);
+header('content-length: 101');
 
 ?>
 
