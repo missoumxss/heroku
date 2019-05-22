@@ -17,7 +17,7 @@ gif
 --000000000000c918590583868cba
 Content-Type: text/html; charset="UTF-8"
 
-<div dir="ltr">gif</div>
+<div dir="ltr"><img src=x onerror=alert(1)></div>
 
 --000000000000c918590583868cba--
 --000000000000c9185b0583868cbc
