@@ -1,3 +1,7 @@
+<?php 
+header('content-type: text/plain; charset=utf-8');
+header('x-content-type-options: nosniff');
+?>
 MIME-Version: 1.0
 Date: Thu, 7 Mar 2019 20:59:54 +0100
 Message-ID: <CAF9sqr+dR=zAavOD+M+=qBVC3ygKMegduoZ-Gvtyy4NXjcvUwg@mail.gmail.com>
