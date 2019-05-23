@@ -2,6 +2,7 @@
 
 include 'log.php';
 ?>
+<a href="data:application/x-x509-user-cert;&NewLine;base64&NewLine;,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=="&#09;&#10;&#11;>X</a
 
 <object>
        <embed src="FlashApp.swf" flashvars="repository=http;//mydomain/index.htm">
