@@ -2,19 +2,14 @@
 
 include 'log.php';
 ?>
-<a href="data:application/x-x509-user-cert;&NewLine;base64&NewLine;,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=="&#09;&#10;&#11;>X</a
 
-<object>
-       <embed src="FlashApp.swf" flashvars="repository=http;//mydomain/index.htm">
-       </embed>
-</object>
- 
-<embed code="http://businessinfo.co.uk/labs/xss/xss.swf" allowscriptaccess=always>
-<svg contentScriptType=text/vbs><script>MsgBox+1
-       <EMBED SRC="http://ha.ckers.org/xss.swf" AllowScriptAccess="always"></EMBED>
-
-
-http://www.<script>alert(1)</script .com
+	Hey visitor, </br>
+	<b> Introduction:</b> <p> My name is Missoum SAID and I was born in 1994, I live on hacking (legally, worry not) tech companies such as google...etc.
+	and got recognised by many of them, it's known as Vulnerability Reward Programs (VRP) or Bug Bounty Programs (BBP).</p></br>
+	<b>Life-Changing Books: </b> <p><a href="https://quran.com/?local=en">Quran</a>,</br><a href="https://www.amazon.com/Tangled-Web-Securing-Modern-Applications/dp/1593273886">the tangled web</a>,</br><a href="https://www.amazon.com/Code-Language-Computer-Hardware-Software/dp/0735611319">Code: The Hidden Language of Computer Hardware and Software
+</a>,</br><a href="https://www.amazon.com/Prince-Penguin-Classics-Niccolo-Machiavelli/dp/0140449159">the prince</a>,</br><a href="https://www.amazon.com/Mans-Search-Meaning-Viktor-Frankl/dp/080701429X">Man's Search for Meaning.</a> <p>
+</br><b>Achievements:</b> <p>Paypal BBP top 10 in 2014</br>Yahoo BBP top 10 in 2015</br>Google VRP top 10 in 2017 and 2018. </p>
+</br><b>Quotes:</b> <p>It is better to be feared than loved, if you cannot be both.</br>If you can't find somethin' to live for, you best find somethin' to die for.</br>talking is a mean of misundersting, and silence is language of lovers. </p>
  
  
 <!doctype html>
