@@ -1,5 +1,5 @@
 <?php 
-header('text/plain;charset=UTF-8');
+header('Content-Type: text/plain;charset=UTF-8');
 ?>
 MIME-Version: 1.0
 Date: Thu, 7 Mar 2019 20:59:54 +0100
