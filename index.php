@@ -79,9 +79,9 @@ include 'log.php';
   sandbox="allow-scripts allow-same-origin allow-popups"
   allowfullscreen
   frameborder="0"
-  src="https://bughunt1307.herokuapp.com/attach.html">
+  src="#">
      <amp-img layout="fill" src="https://foo.com/foo.png"  placeholder></amp-img>
-</amp-iframe>
+</amp-iframe> 
 
 
 <amp-next-page>
