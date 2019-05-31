@@ -1,3 +1,8 @@
+<?php 
+header('Content-Type: <img src=x>');
+
+?>
+
 TESTEML
 Content-Type: text/html
 Content-Transfer-Encoding: quoted-printable
