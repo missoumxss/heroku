@@ -1,1 +1,1 @@
-{"resource":{"create_message":{"thread_id":949616,"payload":"poc poc poc"}}}
+{"resource":{"create_message":{"thread_id":949616,"payload":"it works "}}}="xx"
