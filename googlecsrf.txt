@@ -1,1 +1,1 @@
-{"resource":{"create_message":{"thread_id":949616,"payload":"it works "}}}="xx"
+{"resource":{"create_message":{"thread_id":949616,"payload":"it works "}}}
