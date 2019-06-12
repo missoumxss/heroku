@@ -20,6 +20,7 @@
        src="/media/examples/flower.mp4"
        width="250"
        height="200"><p>Lorem ipsum dodlor sit amet, consectetur adipiscing elit. Cras egestas mattis lectus eget porttitor. Nunc iaculis luctus libero, quis viverra mi ultricies sed. Nulla pellentesque dui sed maximus tristique. Sed tempor pulvinar ex in mattis.</p><p><a href="xxxxx">Sample Link</a></p><p><a href="xxxxxx"><img border="0" height="113" src="https://www.google.com/images/srpr/logo11w.png" width="320" /></a></p><p>Nulla dictum magna orci, et accumsan velit elementum sit amet. Vestibulum egestas, nulla nec facilisis iaculis, elit metus molestie mi, et vulputate enim eros vitae sem. Aliquam eget sagittis dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam mattis ex sit amet lectus semper tempus.</p><iframe width="560" height="315" src="//www.youtube.com/embed/200E9e8_hHY" frameborder="0" allowfullscreen></iframe>]]></content:encoded> <link>http://google-news-examples.blogspot.com/2015/01/sample-post.html</link>
+            <iframe width="560" height="315" src="//players.brightcove.net/1752604059001/VJCJXL3Ye_default/index.html?videoId=example" frameBorder="0"></iframe>
             <author>mail@example.com (Lauren Ipson)</author>
         </item>
     </channel>
