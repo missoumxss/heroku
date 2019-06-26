@@ -12,7 +12,7 @@
             <pubDate>Fri, 23 Jan 2015 23:17:00 +0000</pubDate>
             <title>Sample RSS post #1</title>
             <description>An example RSS article</description>
-            <content:encoded><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas mattis lectus eget porttitor. Nunc iaculis luctus libero, quis viverra mi ultricies sed. Nulla pellentesque dui sed maximus tristique. Sed tempor pulvinar ex in mattis.</p><p><a href="http://www.google.com/">Sample Link</a></p><p><a href="https://www.google.com/images/srpr/logo11w.png"><img border="0" height="113" src="https://www.google.com/images/srpr/logo11w.png" width="320" /></a></p><p>Nulla dictum magna orci, et accumsan velit elementum sit amet. Vestibulum egestas, nulla nec facilisis iaculis, elit metus molestie mi, et vulputate enim eros vitae sem. Aliquam eget sagittis dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam mattis ex sit amet lectus semper tempus.</p><iframe width="560" height="315" src="//www.youtube.com/embed/200E9e8_hHY" frameborder="0" allowfullscreen></iframe>]]></content:encoded> <link>http://google-news-examples.blogspot.com/2015/01/sample-post.html</link>
+            <content:encoded><![CDATA[<svg>xxxx</svg><iframe width="560" height="315" src="//www.youtube.com/embed/200E9e8_hHY" frameborder="0" allowfullscreen></iframe>]]></content:encoded> <link>http://google-news-examples.blogspot.com/2015/01/sample-post.html</link>
             <author>mail@example.com (Lauren Ipson)</author>
         </item>
     </channel>
