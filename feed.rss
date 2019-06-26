@@ -12,7 +12,7 @@
             <pubDate>Fri, 23 Jan 2015 23:17:00 +0000</pubDate>
             <title>Sample RSS post #1</title>
             <description>An example RSS article</description>
-            <content:encoded><![CDATA[<svg>xxxx</svg><iframe width="560" height="315" src="//www.youtube.com/embed/200E9e8_hHY" frameborder="0" allowfullscreen></iframe>]]></content:encoded> <link>http://google-news-examples.blogspot.com/2015/01/sample-post.html</link>
+            <content:encoded><![CDATA[xxxxxx <img src=x></img> <a href=x>xss</a>]]></content:encoded> <link>http://google-news-examples.blogspot.com/2015/01/sample-post.html</link>
             <author>mail@example.com (Lauren Ipson)</author>
         </item>
     </channel>
