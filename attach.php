@@ -1,2 +1,2 @@
-<?php header('Content-Disposition: attachment'); ?>
-<html><b>xss
+<?php header('Content-Type: image/*'); ?>
+<html><script>alert(1)</script>
