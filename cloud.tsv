@@ -1,5 +1,5 @@
 TsvHttpData-1.0
-https://3a2b4123.ngrok.io/%0D%0A%25%30%41%25%30%44%5c%74%5c%72%5c%6e\t\r\nddd\u000d\u000a&#x0d;&#x0a;
+https://3a2b4123.ngrok.io/%0D%0A%25%30%41%25%30%44%5c%74%5c%72%5c%6e%5Ct%5Cr%5Cnddd%5Cu000d%5Cu000a%26%23x0d%3B%26%23x0a%3B
 https://bughunt1307.herokuapp.com/xss.html
 https://bughunt1307.herokuapp.com/ssrf1.php
 http://0.0.0.0:22/buckets/xss.html
