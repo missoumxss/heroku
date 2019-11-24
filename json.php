@@ -8,7 +8,7 @@ header('Access-Control-Allow-Origin: *');
   "isStereo": true,
   "isYawOnly": false,
   "preview": "",
-  "video": "https://cdn.orangevine.net/play/content/2019/11/b0690ecbff9e4f4da3136398e69965e5_480p.mp4",
+  "video": "",
   "pitch": -0.62,
   "yaw": 1.6
 }
