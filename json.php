@@ -3,11 +3,11 @@ header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 ?>
 {
-  "audio": "",
-  "image": "http://bef4c411.ngrok.io/evil.jpg",
+  "audio": "xxxxxxxx",
+  "image": "https://bughunt1307.herokuapp.com/ssrf1.svg",
   "isStereo": true,
   "isYawOnly": false,
-  "preview": "",
+  "preview": "https://bughunt1307.herokuapp.com/ssrf1.svg",
   "video": "",
   "pitch": -0.62,
   "yaw": 1.6
