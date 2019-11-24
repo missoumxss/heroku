@@ -4,7 +4,7 @@ header('Access-Control-Allow-Origin: *');
 ?>
 {
   "audio": "",
-  "image": "../static/images/pages/home/sections/highlights/stereo/hong-kong.jpg",
+  "image": "../../../../../../../../evil.jpg",
   "isStereo": true,
   "isYawOnly": false,
   "preview": "",
