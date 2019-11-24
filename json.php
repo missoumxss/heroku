@@ -4,11 +4,11 @@ header('Access-Control-Allow-Origin: *');
 ?>
 {
   "audio": "xxxxxxxx",
-  "image": "https://bughunt1307.herokuapp.com/svg/ssrf1.svg",
+  "image": "",
   "isStereo": true,
   "isYawOnly": false,
-  "preview": "https://bughunt1307.herokuapp.com/svg/ssrf1.svg",
-  "video": "",
+  "preview": "",
+  "video": "https://bughunt1307.herokuapp.com/xss.mp4",
   "pitch": -0.62,
   "yaw": 1.6
 }
