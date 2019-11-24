@@ -4,7 +4,7 @@ header('Access-Control-Allow-Origin: *');
 ?>
 {
   "audio": "",
-  "image": [1, JSON.stringify({})],
+  "image": [1 + 1 + {}],
   "isStereo": true,
   "isYawOnly": false,
   "preview": "",
