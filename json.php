@@ -4,10 +4,10 @@ header('Access-Control-Allow-Origin: *');
 ?>
 {
   "audio": "",
-  "image": "../../../../../../../../evil.jpg",
+  "image": "http://bef4c411.ngrok.io/evil.jpg",
   "isStereo": true,
   "isYawOnly": false,
-  "preview": "",
+  "preview": "xss",
   "video": "",
   "pitch": -0.62,
   "yaw": 1.6
