@@ -1,35 +1,3 @@
-authtoken: 4nq9771bPxe8ctg7LKr_2ClH7Y15Zqe4bWLWF9p
-region: us
-console_ui: true
-http_proxy: false
-inspect_db_size: 50000000
-log_level: info
-log_format: json
-log: /var/log/ngrok.log
-metadata: '{"serial": "00012xa-33rUtz9", "comment": "For customer alan@example.com"}'
-root_cas: trusted
-socks5_proxy: "socks5://localhost:9150"
-update: false
-update_channel: stable
-web_addr: localhost:4040
-tunnels:
-  website:
-    addr: 8888
-    auth: bob:bobpassword
-    bind_tls: true
-    host_header: "myapp.dev"
-    inspect: false
-    proto: http
-    subdomain: myapp
-
-  e2etls:
-    addr: 9000
-    proto: tls
-    hostname: myapp.example.com
-    crt: example.crt
-    key: example.key
-
-  ssh-access:
-    addr: 22
-    proto: tcp
-    remote_addr: 1.tcp.ngrok.io:12345
+region: eu
+compress_conn: true
+authtoken: 6k5yqd8W4jKqxkPYE4C5m_73dUb27AEebv3s3Jc9EwH
