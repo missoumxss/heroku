@@ -1,0 +1,7 @@
+region: eu
+
+tunnels:
+    phpwebservices:
+        proto: http
+        addr: 8080
+        subdomain: hellomiss
