@@ -1,4 +1,9 @@
+tunnels:
+    phpwebservices:
+        proto: http
+        addr: 8080
+        subdomain: hellomiss
 log_level: error
 log: stderr
-region: in
-web_addr: 127.0.0.1:4040
+region: eu
+web_addr: localhost:4045
