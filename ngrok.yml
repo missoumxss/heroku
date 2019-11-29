@@ -1,9 +1,17 @@
+region: ap
+compress_conn: true
+authtoken: 3y3478YdhD4peP3KxebEh_7dQDi96WgrUEp2WCwAcCh
+log_level: info
+log_format: logfmt
+log: /var/log/ngrok.log
+update: false
+update_channel: stable
 tunnels:
-    phpwebservices:
-        proto: http
-        addr: 8080
-        subdomain: hellomiss
-log_level: error
-log: stderr
-region: eu
-web_addr: localhost:4045
+  carevision:
+    addr: 9000
+    proto: http
+    inspect: false
+  ssh:
+    addr: 22
+    proto: tcp
+    inspect: false
