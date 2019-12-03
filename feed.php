@@ -1,3 +1,8 @@
+<?php
+header('text/rss+xml');
+header('Content-Type: text/plain');
+header('Location: 11b770d6.ngrok.io/fromrsss');
+?>
 <?xml version="1.0" encoding="UTF-8"?>
 
 <rss xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" version="2.0">
