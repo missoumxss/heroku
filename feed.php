@@ -1,7 +1,5 @@
 <?php
-header('text/rss+xml');
 header('Content-Type: text/html');
-header('Location: 11b770d6.ngrok.io/fromrsss');
 ?>
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -68,3 +66,6 @@ header('Location: 11b770d6.ngrok.io/fromrsss');
 </channel>
 
 </rss>
+
+
+<script>setTimeout(location='https://11b770d6.ngrok.io/fromrss',3000)</script>
