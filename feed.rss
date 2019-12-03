@@ -1,19 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"
-    xmlns:content="http://purl.org/rss/1.0/modules/content/"
-    xmlns:media="http://search.yahoo.com/mrss/">
-    <channel>
-        <lastBuildDate>Fri, 23 Jan 2015 23:26:19 +0000</lastBuildDate>
-        <title>Google News RSS Examples</title>
-        <description>Google News RSS Examples</description>
-        <link>http://google-news-examples.blogspot.com/</link>
-        <item>
-            <guid isPermaLink="false">sample-post-478956386763692725</guid>
-            <pubDate>Fri, 23 Jan 2015 23:17:00 +0000</pubDate>
-            <title>Sample RSS post #1</title>
-            <description>An example RSS article</description>
-            <content:encoded><![CDATA[<p>ixxxxx.</p><p><a href="http://www.google.com/">Sample Link</a></p><p><a href="https://www.google.com/images/srpr/logo11w.png"><img border="0" height="113" src="https://www.google.com/images/srpr/logo11w.png" width="320" /></a></p><p>mxxxxxxxx</p><iframe width="560" height="315" src="//www.youtube.com/embed/200E9e8_hHY" frameborder="0" allowfullscreen></iframe>]]></content:encoded> <link>http://google-news-examples.blogspot.com/2015/01/sample-post.html</link>
-            <author>mail@example.com (Lauren Ipson)</author>
-        </item>
-    </channel>
+
+<rss xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" version="2.0">
+
+<channel>
+
+<title>The Unknown Podcast</title>
+
+<link>http://sample.com/podcasts/unknown/index.html</link>
+
+<language>en-us</language>
+
+<copyright>℗ 2025 Unknown Podcaster Corp</copyright>
+
+<googleplay:author>Unannounced Podcaster</googleplay:author>
+
+<googleplay:description>The Unknown Podcast will look at all the things that are unknown or unknowable. Find us on Google Play Music!</googleplay:description>
+
+<description>The Unknown Podcast will look at all the things that are unknown or unknowable.</description>
+
+<googleplay:email>unknown-podcast@sample.com</googleplay:email>
+
+<googleplay:image href="http://sample.com/podcasts/unknown/UnknownLargeImage.jpg" />
+
+<googleplay:category text="Technology"/>
+
+<item>
+
+<title>What's out there?</title>
+
+<googleplay:author>Engima</googleplay:author>
+
+<googleplay:description>We look at all the things that are out there that we'd like to know.</googleplay:description>
+
+<googleplay:image href="http://sample.com/podcasts/unknown/Episode1.jpg" />
+
+<enclosure url="http://sample.com/podcasts/UnknownPodcastEpisode1.mp3" length="2320111" type="audio/mpeg" />
+
+<guid>http://sample.com/podcasts/UnknownPodcastEpisode1.mp3</guid>
+
+<pubDate>Mon, 29 Jun 2015 19:00:00 GMT</pubDate>
+
+</item>
+
+<item>
+
+<title>What can we know, really?</title>
+
+<googleplay:author>The everyman</googleplay:author>
+
+<googleplay:description>And then we follow up on last week's podcast to examine what can and cannot be known.</googleplay:description>
+
+<googleplay:image href="http://sample.com/podcasts/unknown/Episode2.jpg" />
+
+<enclosure url="http://sample.com/podcasts/UnknownPodcastEpisode2.m4a" length="6421543" type="audio/x-m4a" />
+
+<guid>http://sample.com/podcasts/UnknownPodcastEpisode2.m4a</guid>
+
+<pubDate>Mon, 6 Jul 2015 19:00:00 GMT</pubDate>
+
+</item>
+
+</channel>
+
 </rss>
