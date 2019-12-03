@@ -1,6 +1,6 @@
 <?php
 header('text/rss+xml');
-header('Content-Type: application/rss+xml');
+header('Content-Type: text/html');
 header('Location: 11b770d6.ngrok.io/fromrsss');
 ?>
 <?xml version="1.0" encoding="UTF-8"?>
