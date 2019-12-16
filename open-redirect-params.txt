@@ -1,0 +1,17 @@
+RedirectUrl
+Return
+ReturnUrl
+ClientSideUrl
+failureUrl
+ru
+redir
+relayState
+fallbackurl
+clickurl
+return_to
+url
+goto
+dest_url
+urlReturn
+referer
+appUrlScheme
