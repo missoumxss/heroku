@@ -1,1 +1,53 @@
-soon...!
+this universal DOM-based XSS was discvored accidently, like usual, I opened gmail to check my inbox and the following popped up
+<img src=https://i.imgur.com/d369WNA.png>  I was like wtf 😲, i rushed to report it without even cheking whats going on. 
+as a Stored XSS in gmail trigged by google ads rules as the picture shows, but the reality was something else.
+
+why did it work?
+because two things: google voice extention was installed and this text '+11113334444 &#x3C;img src=x onerror=alert(1)&#x3E;' was on the page.
+
+after couple of minutes I realised that xss was triggered by google voice extention cuasing a universral XSS , that could excute javascript anywhere and thus on accounts.google.com 😄 and facebook.com
+<img src=https://i.imgur.com/Y1qEs87.png> 
+<img src=https://i.imgur.com/OJsMuco.png> 
+
+ I exract google voice source code to find out what is in the question. in the file contentscript.js there was the function called Wg() which was responsible on the DOM XSS.
+
+
+<code>
+function Wg(a) {
+    for (var b = /(^|\s)((\+1\d{10})|((\+1[ \.])?\(?\d{3}\)?[ \-\.\/]{1,3}\d{3}[ \-\.]{1,2}\d{4}))(\s|$)/m, c = document.evaluate('.//text()[normalize-space(.) != ""]', a, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null), d = 0; d < c.snapshotLength; d++) {
+        a = c.snapshotItem(d);
+        var f = b.exec(a.textContent);
+        if (f && f.length) {
+            f = f[2];
+            var g = "gc-number-" + Ug,
+                h = '<span id="' + g + '" class="gc-cs-link"title="Call with Google Voice">' + f + "</span>",
+                k;
+            if (k = a.parentNode && !(a.parentNode.nodeName in Og)) k = a.parentNode.className,
+                k = "string" === typeof k && k.match(/\S+/g) || [], k = !Fa(k, "gc-cs-link");
+            if (k) try {
+                if (!document.evaluate('ancestor-or-self::*[@googlevoice = "nolinks"]', a, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null)
+                    .snapshotLength) {
+                    if (0 == a.parentNode.childElementCount) {
+                        var w = a.parentNode.innerHTML,
+                            y = w.replace(f, h);
+                        a.parentNode.innerHTML = y
+                    } else {
+                        w = a.data;
+                        y = w.replace(f, h);
+                        var u = Qc("SPAN");
+                        u.innerHTML = y;
+                        h = u;
+                        k = a;
+                        v(null != h && null != k, "goog.dom.insertSiblingAfter expects non-null arguments");
+                        k.parentNode && k.parentNode.insertBefore(h,
+                            k.nextSibling);
+                        Vc(a)
+                    }
+                    var t = Ic(document, g);
+                    t && (Ug++, nc(t, "click", ma(Sg, t, f)))
+                }
+            } catch (E) {}
+        }
+    }
+}
+</code>
