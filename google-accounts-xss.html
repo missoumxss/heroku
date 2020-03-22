@@ -1,15 +1,25 @@
-this universal DOM-based XSS was discvored accidently, like usual, I opened gmail to check my inbox and the following popped up
-<img src=https://i.imgur.com/d369WNA.png>  I was like wtf 😲, i rushed to report it without even cheking whats going on. 
-as a Stored XSS in gmail trigged by google ads rules as the picture shows, but the reality was something else.
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM-Based XSS at accounts.google.com by Google Voice Extension.</title>
+</head>
+<body>
+	<div>
+		<h1>DOM-Based XSS at accounts.google.com by Google Voice Extension.</h1>
+		<p> first off, I wanna thank god for google ads custmer ID is the same format as American phone number format, and I wanna thank me for spreading XSS payload everywhere.
+this universal DOM-based XSS was discvored accidently, I opened gmail to check my inbox and the following popped up
+<img src=https://i.imgur.com/d369WNA.png>  I was like wtf 😲, I rushed to report it without even cheking whats going on, 
+as a Stored XSS in gmail trigged by google ads rules as the picture shows, but the reality was something else.</p><br>
 
-why did it work?
-because two things: google voice extention was installed and this text '+11113334444 &#x3C;img src=x onerror=alert(1)&#x3E;' was on the page.
+<p><h2>why did it work?</h2>
+because two things: google voice extention was installed and this text '444-555-4455 &#x3C;img src=x onerror=alert(1)&#x3E;' was in the inbox page.
 
-after couple of minutes I realised that xss was triggered by google voice extention cuasing a universral XSS , that could excute javascript anywhere and thus on accounts.google.com 😄 and facebook.com
+after couple of minutes I realised that xss was triggered by google voice extention, that could excute javascript anywhere and thus on accounts.google.com 😄 and facebook.com
 <img src=https://i.imgur.com/Y1qEs87.png> 
-<img src=https://i.imgur.com/OJsMuco.png> 
+<img src=https://i.imgur.com/OJsMuco.png> <p><br>
 
- I exract google voice source code to find out what is in the question. in the file contentscript.js there was the function called Wg() which was responsible on the DOM XSS.
+
+ <p> I exract google voice source code to find out what is in the question. in the file contentscript.js there was the function called Wg() which was responsible on the DOM XSS. <p><br>
 
 
 <code>
@@ -51,3 +61,40 @@ function Wg(a) {
     }
 }
 </code>
+
+<p> the function wasn't difficult to read, basicly developer was looking for phone number in <body> element content, grab it, create another span element with the grabbed phone number as its content so the user can call that number from web page.
+lets break it down, from line to line,it is looping through body's elements' contents with document.evaluate, document.evaluate is a method makes it possible to search within the HTML and XMl document, returns XPathResult object that represents the result and here it is meant to evaluate and grab all body's elements' contents and assign it to variable 'a', and this is was the source: 
+a = c.snapshotItem(d); 
+then executes a search (variable 'b' which is a regex for America phone number format) for a match in the returned result variable 'a'. then if the match found assign it to variable 'f' then put it as span element's content in variable 'h' </p><br>
+
+<p> from line to to line was checking the tag name that HTML element from which the variable 'f' got its content, is neither one of these tags SCRIPT,STYLE,HEAD,OBJECT,TEXTAREA,INPUT,SELECT,A nor it has class attribute with name of "gc-cs-link", this cheking was mainly for two things: 
+1) prevent the extension from messing with DOM because it doesn't want to play with content on element such as SCRIPT,STYLE and HEAD and doesn't achieve what it wants to do on elements like  INPUT, SELECT etc...
+2) it stops the script from looping infinitely, because it doesn't want to create span element with phone number again if it already exists. <p><br>
+
+<p> from line to to line, there is an if condition, if variable k is true, means no element with class attribute name of "gc-cs-link" has been found, it will execute a try statement, another an if condition inside the try statement check if there is nowhere an element with an "googlevoice" attribute and "Nolinks" as its value  can be found, again using the document.evaluate, then nested if condition check if variable 'a'  has no child elements, and here is where the sink happens:
+
+var w = a.parentNode.innerHTML,
+y = w.replace(f, h);
+a.parentNode.innerHTML = y
+
+this in case the variable 'a' has no child elements, othewise it will excute the next statment where it sinks again in the following line: 
+k.parentNode && k.parentNode.insertBefore(h, k.nextSibling);
+
+<p><br>
+
+<p>
+<h2>the fix:</h2> <br>
+
+I believe the devolper was going to execute variable 'f' that was holding the value of phone mumber for ex '+12223334455' on the sinks (innerHTML, insertBefore),
+instead for reason I coudlnt understand he executes variable 'a' which was holding the payload ex: '<img src=x onerror=alert(1)> +12223334455' on the sinks,
+this xss could be spared if he did so. but then ended up in nice DOM XSS. 
+<p><br>
+
+<p> bonus: the regex  could be better like this (\+1|00) because 0012223334455 is a valid american phone number as well.<p> 
+
+	</div>
+
+</body>
+</html>
+
+
