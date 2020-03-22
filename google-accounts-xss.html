@@ -86,7 +86,7 @@ k.parentNode && k.parentNode.insertBefore(h, k.nextSibling);
 <h2>the fix:</h2> <br>
 
 I believe the devolper was going to execute variable 'f' that was holding the value of phone mumber for ex '+12223334455' on the sinks (innerHTML, insertBefore),
-instead for reason I coudlnt understand he executes variable 'a' which was holding the payload ex: '<img src=x onerror=alert(1)> +12223334455' on the sinks,
+instead for reason I coudlnt understand he executes variable 'a' which was holding the payload ex: '&#x3C;img src=x onerror=alert(1)&#x3E; +12223334455' on the sinks,
 this xss could be spared if he did so. but then ended up in nice DOM XSS. 
 <p><br>
 
