@@ -13,7 +13,7 @@
 
 
 <img src="https://i.imgur.com/d369WNA.png" style="width: 100%;"><br>
- <p> I was like wtf, I rushed to report it without even checking what's going on, as a Stored XSS in Gmail triggered by google ads rules as the picture shows, but the reality was something else.</p><br>
+ <p>I rushed to report it to avoid dupe, without even checking what's going on, as a Stored XSS in Gmail triggered by google ads rules as the picture shows, but the reality was something else.</p><br>
 
 <h2>why did it work?</h2>
 <p> because two things: google voice extension was installed and this text '444-555-4455  &#x3C;img src=x onerror=alert(1)&#x3E;' was in the inbox page.<br> after a couple of minutes, I realized that this XSS was triggered by Google Voice Extension, which could execute javascript anywhere and thus on accounts.google.com and facebook.com. </p><br>
