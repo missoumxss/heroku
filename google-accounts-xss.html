@@ -8,19 +8,19 @@
 	<div style="width: 55%; position: absolute; top: 40px; left: 200px;">
 		<h1 style="font-size: xx-large;">DOM-Based XSS at accounts.google.com by Google Voice Extension.</h1>
 
-<p style="font-family: Arial, Helvetica, sans-serif; font-size: ;">first off, I wanna thank god for google ads' customer ID is the same format as American phone number format, and I wanna thank me for spreading XSS payload everywhere. <br>
+<p>first off, I wanna thank god for google ads' customer ID is the same format as American phone number format, and I wanna thank me for spreading XSS payload everywhere. <br>
 	this universal DOM-based XSS was discovered accidentally, I opened Gmail to check my inbox and the following popped up<p> <br>
 
 
 <img src="https://i.imgur.com/d369WNA.png" style="width: 100%;"><br>
- <p style="font-family: Arial, Helvetica, sans-serif; font-size: ;"> I was like wtf, I rushed to report it without even checking what's going on, as a Stored XSS in Gmail triggered by google ads rules as the picture shows, but the reality was something else.</p><br>
+ <p> I was like wtf, I rushed to report it without even checking what's going on, as a Stored XSS in Gmail triggered by google ads rules as the picture shows, but the reality was something else.</p><br>
 
 <h2>why did it work?</h2>
-<p style="font-family: Arial, Helvetica, sans-serif; font-size: ;"> because two things: google voice extension was installed and this text '444-555-4455  &#x3C;img src=x onerror=alert(1)&#x3E;' was in the inbox page.<br> after a couple of minutes, I realized that this XSS was triggered by Google Voice Extension, which could execute javascript anywhere and thus on accounts.google.com and facebook.com. </p><br>
+<p> because two things: google voice extension was installed and this text '444-555-4455  &#x3C;img src=x onerror=alert(1)&#x3E;' was in the inbox page.<br> after a couple of minutes, I realized that this XSS was triggered by Google Voice Extension, which could execute javascript anywhere and thus on accounts.google.com and facebook.com. </p><br>
 <img src="https://i.imgur.com/Y1qEs87.png" style="width: 100%;"> <br>
 <img src="https://i.imgur.com/OJsMuco.png" style="width: 100%;"> <br>
 
-<p style="font-family: Arial, Helvetica, sans-serif; font-size: ;"> I extract google voice source code to find out what is in the question. in the file contentscript.js, there was a function called Wg() which was responsible for the DOM XSS. </p><br>
+<p> I extract google voice source code to find out what is in the question. in the file contentscript.js, there was a function called Wg() which was responsible for the DOM XSS. </p><br>
 
 
 <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000ff">function</span> Wg(a) {
@@ -64,16 +64,16 @@
 
 
 
-	<p style="font-family: Arial, Helvetica, sans-serif; font-size: ;"> the function wasn't difficult to read, the developer was looking for a phone number in the body's elements content, grab it, create another span element with the grabbed phone number as its content so the user can click and call that number right from the web page. <br>
+	<p> the function wasn't difficult to read, the developer was looking for a phone number in the body's elements content, grab it, create another span element with the grabbed phone number as its content so the user can click and call that number right from the web page. <br>
 let's break it down, from line 1 to line 9, it is looping through the body's elements' contents with document.evaluate, document.evaluate is a method makes it possible to search within the HTML and XML document, returns XPathResult object that represents the result and here it is meant to evaluate and grab all body's elements' contents and assign it to the variable 'a', and this was the source: <br>
 <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">a = c.snapshotItem(d);
 </pre></div>
 <br>
-<p style="font-family: Arial, Helvetica, sans-serif; font-size: ;" >
+<p>
 then executes a search (variable 'b' which is a regex for America phone number format) for a match in the returned result that is stored in variable 'a'. then if the match found assign it to variable 'f' then put it as span element's content in variable 'h'. <br>
 line 10 and 11 was checking the tag name that HTML element from which the variable 'f' got its content, is neither one of these tags SCRIPT, STYLE, HEAD, OBJECT, TEXTAREA, INPUT, SELECT, and A, nor it has the class attribute with the name of "gc-cs-link", this checking was mainly for two things: <br> 1) prevent the extension from messing with DOM because it doesn't want to play with the content on an element such as SCRIPT, STYLE, and HEAD and doesn't achieve what it wants to do on elements like INPUT, SELECT, etc...  <br> 2) it stops the script from looping infinitely, because it doesn't want to create span element with phone number again if it already exists. </p><br>
 
-<p style="font-family: Arial, Helvetica, sans-serif; font-size: ;" >
+<p>
 	from line 12 to line 27, there is an if condition, if variable k is true, means no element with a class attribute name of "gc-cs-link" has been found, it will execute a try statement, another an if condition inside the try statement check, if there is nowhere an element with a "googlevoice" attribute and "nolinks" as its value can be found, again using the document.evaluate, then nested if condition check if the variable 'a'  has no child elements, and here is where the sink happens: <br>
 <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">w = a.parentNode.innerHTML,
 y = w.replace(f, h);
@@ -85,7 +85,7 @@ a.parentNode.innerHTML = y
 
 
 <br>
-<p style="font-family: Arial, Helvetica, sans-serif; font-size: ;" >
+<p>
 this in case the variable 'a' has no child elements, othewise it will excute the next statment where it sinks again in the following line: <br>
 <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">k.parentNode &amp;&amp; k.parentNode.insertBefore(h, k.nextSibling);
 </pre></div>
@@ -97,14 +97,14 @@ this in case the variable 'a' has no child elements, othewise it will excute the
 
 <h2>The fix: </h2>
   	
-	<p style="font-family: Arial, Helvetica, sans-serif; font-size: ;"> I believe the developer was going to execute variable 'f' that was holding the value of phone number for example  '+12223334455' on the sinks (innerHTML, insertBefore), instead for reason I couldn't understand he executes variable 'a' which was holding the payload ex: '444-555-4455  &#x3C;img src=x onerror=alert(1)&#x3E;' on the sinks, this XSS could be spared if he did not do so.
+	<p> I believe the developer was going to execute variable 'f' that was holding the value of phone number for example  '+12223334455' on the sinks (innerHTML, insertBefore), instead for reason I couldn't understand he executes variable 'a' which was holding the payload ex: '444-555-4455  &#x3C;img src=x onerror=alert(1)&#x3E;' on the sinks, this XSS could be spared if he did not do so.
  
 </p><br>
 
 
 
 
- <p style="font-family: Arial, Helvetica, sans-serif; font-size: ;"> bonus: the regex  could be better like this (\+1|00) because 0012223334455 is a valid american phone number as well. 
+ <p> bonus: the regex  could be better like this (\+1|00) because 0012223334455 is a valid american phone number as well. 
 </p>
 	</div>
 	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
