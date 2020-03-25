@@ -8,14 +8,14 @@
 	<div style="width: 55%; position: absolute; top: 40px; left: 200px;">
 		<h1 style="font-size: xx-large;">DOM-Based XSS at accounts.google.com by Google Voice Extension.</h1>
 
-	<p> this universal DOM-based XSS was discovered accidentally, it is fortunate that the google ads' customer ID is the same format as American phone number format. I opened Gmail to check my inbox and the following popped up</p> <br>
+	<p> This universal DOM-based XSS was discovered accidentally, it is fortunate that the google ads' customer ID is the same format as American phone number format. I opened Gmail to check my inbox and the following popped up</p> <br>
 
 
 <img src="https://i.imgur.com/d369WNA.png" style="width: 100%;"><br>
  <p>I rushed to report it to avoid dupe, without even checking what's going on, as a Stored XSS in Gmail triggered by google ads rules as the picture shows, but the reality was something else.</p><br>
 
 <h2>Why did it work?</h2>
-<p> because two things: google voice extension was installed and this text '444-555-4455  &#x3C;img src=x onerror=alert(1)&#x3E;' was in the inbox page.<br> after a couple of minutes, I realized that this XSS was triggered by Google Voice Extension, which could execute javascript anywhere and thus on accounts.google.com and facebook.com. </p><br>
+<p> Because two things: google voice extension was installed and this text '444-555-4455  &#x3C;img src=x onerror=alert(1)&#x3E;' was in the inbox page.<br> after a couple of minutes, I realized that this XSS was triggered by Google Voice Extension, which could execute javascript anywhere and thus on accounts.google.com and facebook.com. </p><br>
 <img src="https://i.imgur.com/Y1qEs87.png" style="width: 100%;"> <br>
 <img src="https://i.imgur.com/OJsMuco.png" style="width: 100%;"> <br>
 
