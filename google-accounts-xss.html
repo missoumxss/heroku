@@ -64,16 +64,19 @@
 
 
 	<p> The function wasn't difficult to read, the developer was looking for a phone number in the body's elements content, grab it, create another span element with the grabbed phone number as its content so the user can click and call that number right from the web page. <br>
-Let's break it down, from line 1 to line 9, it is looping through the body's elements' contents with document.evaluate, document.evaluate is a method makes it possible to search within the HTML and XML document, returns XPathResult object that represents the result and here it is meant to evaluate and grab all body's elements' contents and assign it to the variable 'a', and this was the source: <br>
-<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">a = c.snapshotItem(d);
+Let's break it down, from line 1 to line 9, it is looping through the body's elements' contents with document.evaluate, document.evaluate is a method makes it possible to search within the HTML and XML document, returns XPathResult object that represents the result and here it is meant to evaluate and grab all body's elements' contents, technically select all the texts  nodes from the current node and assign it to the variable 'a', and this was the source, note here it was a DOM XPath-injection: <br>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">(<span style="color: #0000ff">var</span> b = <span style="color: #a31515">/(^|\s)((\+1\d{10})|((\+1[ \.])?\(?\d{3}\)?[ \-\.\/]{1,3}\d{3}[ \-\.]{1,2}\d{4}))(\s|$)/m</span>, c = document.evaluate(<span style="color: #a31515">&#39;.//text()[normalize-space(.) != &quot;&quot;]&#39;</span>, a, <span style="color: #0000ff">null</span>, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, <span style="color: #0000ff">null</span>), d = 0; d &lt; c.snapshotLength; d++) {
+        a = c.snapshotItem(d);
 </pre></div>
+
 <br>
 <p>
 then executes a search (variable 'b' which is a regex for America phone number format) for a match in the returned result that is stored in variable 'a'. then if the match found assign it to variable 'f' then put it as span element's content in variable 'h'. <br>
 Line 10 and 11 was checking the tag name that HTML element from which the variable 'f' got its content, is neither one of these tags SCRIPT, STYLE, HEAD, OBJECT, TEXTAREA, INPUT, SELECT, and A, nor it has the class attribute with the name of "gc-cs-link", this checking was mainly for two things: <br> 1) prevent the extension from messing with DOM because it doesn't want to play with the content on an element such as SCRIPT, STYLE, and HEAD and doesn't achieve what it wants to do on elements like INPUT, SELECT, etc...  <br> 2) it stops the script from looping infinitely, because it doesn't want to create span element with phone number again if it already exists. </p><br>
 
 <p>
-	From line 12 to line 27, there is an if condition, if variable k is true, means no element with a class attribute name of "gc-cs-link" has been found, it will execute a try statement, another an if condition inside the try statement check, if there is nowhere an element with a "googlevoice" attribute and "nolinks" as its value can be found, again using the document.evaluate, then nested if condition check if the variable 'a'  has no child elements, and here is where the sink happens: <br>
+	From line 12 to line 27, there is an if condition, if variable k is true, means no element with a class attribute name of "gc-cs-link" has been found, it will execute a try statement, another an if condition inside the try statement check, if there is nowhere an element with a "googlevoice" attribute and "nolinks" as its value can be found, again using the document.
+	, then nested if condition check if the variable 'a'  has no child elements, and here is where the sink happens: <br>
 <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">w = a.parentNode.innerHTML,
 y = w.replace(f, h);
 a.parentNode.innerHTML = y
