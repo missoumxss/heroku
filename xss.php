@@ -1,3 +1,3 @@
 <?php
-echo "Hello: ".$_GET["input"];
+echo $_GET["input"];
 ?>
