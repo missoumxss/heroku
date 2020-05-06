@@ -4,7 +4,7 @@
 
 <channel>
 
-<title><![CDATA["+textstring+"]]></title>
+<title>xss</title>
 
 <link>ftp://0.0.0.0:22</link>
 
