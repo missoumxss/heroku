@@ -4,7 +4,7 @@
 
 <channel>
 
-<title>xss</title>
+<title>xss&#x3C;b&#x3E;xxx&#x3C;/b&#x3E;</title>
 
 <link>ftp://0.0.0.0:22</link>
 
@@ -26,7 +26,7 @@
 
 <item>
 
-<title> xxxa</title>
+<title> xxxa&#x3C;b&#x3E;xxx&#x3C;/b&#x3E;ff</title>
 
 <googleplay:author>Engima</googleplay:author>
 
