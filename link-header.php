@@ -1,6 +1,6 @@
 <?php
 header('Access-Control-Allow-Origin: *');
-header('Link: <http://0c234d97.ngrok.io/styles.css>; rel=stylesheet;');
+header('Link: <javasript:alert(1)>; rel=preload; as=script,?key=AIzaSyAa8yy0GdcGPHdtD083HiGGx_S0vMPScDM>; rel=preload');
 header('Content-Type: text/html');
 ?>
 <!DOCTYPE html>
