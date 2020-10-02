@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+ <body>
+ <script>
+ function createFrame() {
+	 window.webkit.messageHandlers.FrameBecameAvailable.postMessage({
+	 'crwFrameId': "foobar');alert(document['body']['innerText']+'",
+	 'crwFrameKey': '7tFIdTXkYWMsMvIlS31hnvvkxCppN0HUo8gmmChiT48=',
+	 'crwFrameLastReceivedMessageId': 0
+	 });
+ }
+ 
+ setTimeout(createFrame, 1000);
+ </script>
+ </body>
+</html>
