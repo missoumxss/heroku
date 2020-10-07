@@ -5,33 +5,32 @@
 	<title>The mass CSRFing of *.google.com/* products.</title>
 </head>
 <body>
-	<a href="/" style="position: absolute;
-top: 10px; left: 10px; font-size: 150%;"> Home</a> 
+	<a href="/" style="position: absolute; top: 10px; left: 10px; font-size: 150%;"> Home</a> 
 	<div style="width: 55%; position: absolute; top: 40px; left: 200px;">
 		<h1 style="font-size: xx-large;">The mass CSRFing of *.google.com/* products.</h1>
 
-	<p> back in 2018, when I got my first the research granted from google, I thought that submitting something affecting many google products would be cool, though that was unnecessary, It was just misconception from me how the grants work. 
+<p>back in 2018, when I got my first the research granted from google, I thought that submitting something affecting many google products would be cool, though that was unnecessary, It was just misconception from me how the grants work. 
 
-diverting from the usual findings (XSS), wanting to find CSRF this time, and it all started with <a href="https://insert-script.blogspot.com/2014/12/multiple-pdf-vulnerabilites-text-and.html">alex's powerful finding</a> <img src="https://i.imgur.com/i6kRoON.png">
+diverting from the usual findings (XSS), wanting to find CSRF this time, and it all started with <a href="https://insert-script.blogspot.com/2014/12/multiple-pdf-vulnerabilites-text-and.html">alex's powerful finding</a> <img src=>
 the issue was a same origin policy bypass which will do perfectly the work of bypassing csrf Protection by reading the csrf tokens, except for one thing, it is not commonly prevalent that target allows uploading or hosting PDF files on target origin.
 
 so I had to finding a way, after going through a few write ups, researches and publications digging more in PDF stuff, I came up with the exploiting of content-sniffing algorithms of major browser like IE:
 
-1) we can force the content type to be loaded as an application/pdf whatever was the real content-type only by appending " ;evil.pdf" to the end of the URL, for ex:  <code><embed src=victim.com/victim;.evil.pdf  type=application/pdf> </code>tag.
+1) we can force the content type to be loaded as an application/pdf whatever was the real content-type only by appending " ;evil.pdf" to the end of the URL, for ex:  <embed src=victim.com/victim;.evil.pdf  type=application/pdf> tag.
 
 2)adobe validating the  PDF file by looking for the first appearance of "%PDF-1." then just keeps reading it as a valid PDF file long as it meets the requirements structure of a PDF file.
 
 what does that mean ? well it means: finding an endpoint where we can inject PDF content and special characters ( % <> " ), besides appending " ;.pdf "  to that url returns the same response, leads to host a pdf file on victim.com's origin, no matter where it is injected, what it's the real content type nor what comes before the "%PDF-1."
-
 in *.google.com there are quite  endpoints that meet these requirements, now that I have a way to run pdf on target origin, most of the these endpoints were CSV export/import functionality like the following:
+<img src="https://i.imgur.com/T7EpwpA.png"> <br>
+besides to other few typical input/output reflecting back on pages of content-Type: text/plain.
 
-<img src=""> 
-besides to other few typical input/output reflecting back on pages of content-Type: text/plain like the following:
-<img src=> 
+I used ediscovery.google.com as proof of concept, and sent the report to google vrp, honestly I wasn't expecting anything higher than 500 bucks for reward as the vulnerability is exploitable only in IE, until I was surprised with full reward like any practical CSRF then I started the mass exploiting and send more like this issue.
 
-
-I used ediscovery.google.com as proof of concept, and sent the report to google vrp, honestly I wasn't expecting anything for reward as the vulnerability is exploitable only in IE, until I was surprised with full reward like any practical CSRF then I started the mass exploiting and sent more like this issue which resulted in some 30,000$ of bounties for mutlpile csrf combined.
-
+some video POCs:<br>
+	<a href="https://www.youtube.com/watch?v=0g8tgrPjeUk">CSRF google.com/contacts/ </a><br>
+	<a href="https://www.youtube.com/watch?v=1j0Pm0LeFwg">CSRF ediscovery.google.com </a><br>
+	<a href="https://www.youtube.com/watch?v=nhKwNNolH7c">CSRF chat.google.com CSRF </a><br>
 </p> <br>
 
 
