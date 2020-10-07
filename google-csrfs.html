@@ -12,11 +12,11 @@
 <p>back in 2018, when I got my first the research granted from google, I thought that submitting something affecting many google products would be cool, though that was unnecessary, It was just misconception from me how the grants work.</p><br>
 
 <p>
-diverting from the usual findings (XSS), wanting to find CSRF this time, and it all started with <a href="https://insert-script.blogspot.com/2014/12/multiple-pdf-vulnerabilites-text-and.html">alex's powerful finding</a> <img src="https://i.imgur.com/3fvPuXW.png"> 
+diverting from the usual findings (XSS), wanting to find CSRF this time, and it all started with <a href="https://insert-script.blogspot.com/2014/12/multiple-pdf-vulnerabilites-text-and.html">alex's powerful finding</a> <img src="https://i.imgur.com/3fvPuXW.png" > 
 <br>
 the issue was a same origin policy bypass which will do perfectly the work of bypassing csrf Protection by reading the csrf tokens, except for one thing, it is not commonly prevalent that target allows uploading or hosting PDF files on target origin.</p><br>
 
-<p>
+<p>img
 so I had to find a way, after going through a few write ups, researches and publications digging more in PDF stuff, I came up with the exploiting of content-sniffing algorithms of major browser like IE:<br>
 
 1) we can force the content type to be loaded as an application/pdf whatever was the real content-type only by appending " ;evil.pdf" to the end of the URL, for ex: <br>
@@ -27,8 +27,8 @@ so I had to find a way, after going through a few write ups, researches and publ
 what does that mean ? well it means: finding an endpoint where we can inject PDF content and special characters ( % &#x3C;&#x3E; &#x22; ), besides appending " ;.pdf "  to that url returns the same response, leads to host a pdf file on victim.com's origin, no matter where it is injected, what it's the real content type nor what comes before the "%PDF-1." </p><br>
 
 <p>
-in *.google.com there are quite  endpoints that meet these requirements, now that I have a way to run pdf on target origin, most of the these endpoints were CSV export/import functionality like the following:
-<img src="https://i.imgur.com/T7EpwpA.png"> <br>
+in *.google.com there are quite  endpoints that meet these requirements, now that I have a way to run pdf on target origin, most of the these endpoints were CSV export/import functionality like the following: <br>
+<img src="https://i.imgur.com/T7EpwpA.png" style="width: 100%;"> <br>
 besides to other few typical input/output reflecting back on pages of content-Type: text/plain.<br>
 
 I used ediscovery.google.com as proof of concept, and sent the report to google vrp, honestly I wasn't expecting anything higher for the reward as the vulnerability was exploitable only in IE, until I was surprised with full reward like any practical CSRF then I started the mass exploiting and send more like this issue.</p><br>
