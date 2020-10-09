@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sandboxed Content</title> 
+	</head>
+	<body>
+		<p>If an alert is displayed, then the browser does not support the sandbox MIME type and has failed open.</p>
+		<script>
+		document.cookie = "somefakecookie=test; expires=Thu, 2 Aug 2012 20:47:11 UTC; path=/";
+		alert(document.cookie);	
+		</script>
+	</body>
+</html>	
