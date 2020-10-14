@@ -1,1 +1,1 @@
-alert(0)
+alert('origin: ' + origin + ', location: ' + location)
