@@ -2,5 +2,5 @@ TESTEML
 Content-Type: text/html
 Content-Transfer-Encoding: quoted-printable
 
-=3Ca=20href=3D=22http=3A=2F=2Fbughunt1307.herokuapp.com=2Fevil.google.com=22=20download=3E=20XSS=20=3C=2Fa=3E=3Ciframe=20src=3D=22http=3A=2F=2Fbughunt1307.herokuapp.com=2Fevil.google.com=22=3E=3C=2Fiframe=3E
+=3Ca=20href=3D=22javascript=3Aalert(window.location.origin)=22=20download=3E=20XSS=20=3C=2Fa=3E=3Ciframe=20src=3D=22https=3A=2F=2Fwww.google.com=2F=22=3E=3C=2Fiframe=3E
 
