@@ -1,2 +1,2 @@
-<?php header('Content-Type: image/*'); ?>
-<html><script>alert(1)</script>
+<?php header('Content-Disposition: attachment; filename="exploit.html"'); ?>
+<a href="evil"> xss</a>
