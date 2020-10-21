@@ -1,4 +1,4 @@
-<?php header('Content-Disposition: attachment; filename="exploit.html"'); ?>
+<?php header('Content-Disposition: attachment; filename="evil.google.com/evil.html"'); ?>
 <!DOCTYPE html>
 <html>
 <head>
