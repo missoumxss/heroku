@@ -12,7 +12,7 @@ let emptyArr = []
 for (let i = 0; i < 335; i++) {
     try {
         var url = new URL(arrPro[i] + '://drive.google.com/');
-        if (url.origin.indexOf('xss') > -1) {
+        if (url.origin.indexOf('drive') > -1) {
             var ifr = document.createElement('iframe')
             var a = document.createElement('a')
             a.href = url.origin + '/secret.txt'
