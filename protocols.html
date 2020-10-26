@@ -11,8 +11,8 @@ let emptyArr = []
 
 for (let i = 0; i < 335; i++) {
     try {
-        var url = new URL(arrPro[i] + ':///bughunt1307/secret.txt');
-        if (url.origin.indexOf('bughunt1307') > -1) {
+        var url = new URL(arrPro[i] + ':///xss:99/');
+        if (url.origin.indexOf('xss') > -1) {
             var ifr = document.createElement('iframe')
             var a = document.createElement('a')
             a.href = url.origin + '/secret.txt'
