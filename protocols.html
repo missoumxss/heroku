@@ -11,7 +11,7 @@ let emptyArr = []
 
 for (let i = 0; i < 335; i++) {
     try {
-        var url = new URL(arrPro[i] + ':///xss:99/');
+        var url = new URL(arrPro[i] + '://drive.google.com/');
         if (url.origin.indexOf('xss') > -1) {
             var ifr = document.createElement('iframe')
             var a = document.createElement('a')
