@@ -1,13 +1,39 @@
 .img {
   margin: auto;
-  width: 60%;
-  border: 3px solid #73AD21;
+  position: fixed;
+  top: 7%;
+  left: 40%;
+  width: 15%;
   padding: 10px;
 }
 
 .agentname {
   margin: auto;
-  width: 60%;
-  border: 3px solid #73AD21;
+  position: fixed;
+  top: 30%;
+  left: 33%;
+  font-size: 52px;
+  width: 30%;
+  border: 13px solid brown;
   padding: 10px;
+}
+
+.intro {
+  margin: auto;
+  position: fixed;
+  top: 50%;
+  left: 33%;
+  font-size: 50px;
+  width: 30%;
+  border: 13px solid yellow;
+  padding: 10px;
+}
+
+.contact {
+  position: fixed;
+  top: 80%;
+  left: 33%;
+  font-size: 15px;
+  width: 30%;
+  padding: 5px;
 }
