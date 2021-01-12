@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button id="login">Login</button> 
+<button id="register">Register</button>
+
+<script type="text/javascript">
+	window.addEventListener('click', (e) => {
+		if (e.target.id == 'Login') {
+
+			window.location.href ='http://bughunt1307.herokuapp.com/public/signin.html'
+		}
+
+		if (e.target.id == 'register') {
+
+			window.location.href ='http://bughunt1307.herokuapp.com/public/signup.html'
+		}
+	})	
+</script>
+</body>
+</html>
